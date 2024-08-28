@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --ColorPrincipal:#272727;
+    --ColorSecundario:#f4f4f4;
+    --ColorTerciario:#B7B7B7;
+    --ColorAmarillo:#e97a00;
+    --FontFamily:"Open Sans", sans-serif;
+    ;
+}
