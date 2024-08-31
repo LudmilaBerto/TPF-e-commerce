@@ -10,7 +10,7 @@ app.use(express.static('public'))
 
 // Ruta inicial
 app.get('/', (req,res)=>{
-    res.send('pagina inicial')
+    res.render('index')
 })
 // Rutas estaticas
 
