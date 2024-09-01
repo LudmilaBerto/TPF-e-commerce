@@ -1,0 +1,27 @@
+/* Para pantallas de 1440px o menos */
+@media (max-width: 1440px) {
+    /* Estilos específicos para pantallas de hasta 1440px */
+}
+
+/* Para pantallas de 1024px o menos */
+@media (max-width: 1024px) {
+    /* Estilos específicos para pantallas de hasta 1024px */
+}
+
+/* Para pantallas de 991px o menos */
+@media (max-width: 991px) {
+    /* Estilos específicos para pantallas de hasta 991px */
+   
+}
+
+/* Para pantallas de 767px o menos */
+@media (max-width: 767px) {
+    /* Estilos específicos para pantallas de hasta 767px */
+ 
+}
+
+/* Para pantallas de 480px o menos */
+@media (max-width: 480px) {
+    /* Estilos específicos para pantallas de hasta 480px */
+   
+}
