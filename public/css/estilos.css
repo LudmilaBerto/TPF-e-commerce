@@ -100,3 +100,23 @@
 /* ---------------------FINALIZA EL HEADER------------------------------------------- */
 
 
+/* COMIENZA HERO PAGINA INICIO */
+
+.Hero{
+    background-color: var(--ColorPrincipal);
+    color: var(--ColorSecundario);
+    font-family: var(--FontFamily);
+}
+.seccion-Hero-inicio h1{
+    font-size: 140px;
+    font-weight: 600;
+    padding-top: 40px;
+}
+.seccion-Hero-inicio p{
+    font-size: 15px;
+    padding-bottom: 35px;
+}
+
+
+
+/* FINALIZA HERO PAGINA INICIO */
