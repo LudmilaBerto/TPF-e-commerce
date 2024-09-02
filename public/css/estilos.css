@@ -229,6 +229,7 @@
 }
 /* ------------------- FINALIZA SECCION TRES PAGINA INICIO ---------------------------- */
 
+
 /* catalogo */
 .catalogo{
     background-color: var(--ColorPrincipal);
@@ -244,6 +245,27 @@
     color: var(--color-p);
 }
 
-.newseller {
+.newseller{
     background-color: var(--seller);
+    cursor: pointer;
+    color: var(--color-p); /* Para que el texto sea visible */
+    left: 0;
+}
+
+.newseller:focus {
+    outline: none; /* Elimina el borde al hacer clic */
+    cursor: text;
+}
+
+.flecha-seller{
+    background-color: var(--seller);
+    padding: 0;
+}
+
+.logos-footer{
+    color: var(--ColorSecundario);
+}
+
+.email{
+    color: var(--ColorSecundario);
 }
