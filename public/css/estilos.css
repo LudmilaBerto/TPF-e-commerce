@@ -206,3 +206,23 @@
 }
 
 /* ------------------- FINALIZA SECCION DOS PAGINA INICIO ---------------------------- */
+
+
+/* ------------------- COMIENZA SECCION TRES PAGINA INICIO ---------------------------- */
+
+.seccionTres-inicio{
+    background-color: var(--ColorPrincipal);
+    color: var(--ColorSecundario);
+}
+
+.contenedorImagenesSeccionTres{
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a una nueva línea */
+    gap: 14px; /* Espacio entre elementos */
+}
+
+.imagenSTinicio{
+    flex: 1 1 25%; /* Permite que las imágenes ocupen aproximadamente el 30% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción de altura automática */
+}
+/* ------------------- FINALIZA SECCION TRES PAGINA INICIO ---------------------------- */
