@@ -126,6 +126,7 @@
 .seccionDos-inicio{
     background-color: var(--ColorPrincipal);
     color: var(--ColorSecundario);
+    font-family: var(--FontFamily);
 }
 
 /* pongo espacio arriba para separarlo del contenido del hero */
@@ -213,6 +214,8 @@
 .seccionTres-inicio{
     background-color: var(--ColorPrincipal);
     color: var(--ColorSecundario);
+    font-family: var(--FontFamily);
+
 }
 
 .contenedorImagenesSeccionTres{
@@ -226,3 +229,28 @@
     height: auto; /* Mantiene la proporción de altura automática */
 }
 /* ------------------- FINALIZA SECCION TRES PAGINA INICIO ---------------------------- */
+
+/* ------------------- COMIENZA SECCION CUATRO PAGINA INICIO ---------------------------- */
+.seccionCuatro-inicio{
+    background-color: var(--ColorPrincipal);
+    color: var(--ColorSecundario);
+    font-family: var(--FontFamily);
+    padding-top: 150px;
+}
+.descripcionArticulo h5{
+    font-weight: 600;
+}
+.descripcionArticulo p{
+    font-size: 14px;
+}
+
+
+.ul-descripcion-sofa{
+    font-weight: 600;
+}
+
+
+
+
+
+/* ------------------- FINALIZA SECCION CUATRO PAGINA INICIO ---------------------------- */
