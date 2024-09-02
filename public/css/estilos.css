@@ -10,7 +10,9 @@
     --ColorTerciario:#B7B7B7;
     --ColorAmarillo:#e97a00;
     --FontFamily:"Open Sans", sans-serif;
-
+    /* footer */
+    --color-p:#747474;
+    --seller:#414141;
 }
 
 
@@ -226,3 +228,44 @@
     height: auto; /* Mantiene la proporción de altura automática */
 }
 /* ------------------- FINALIZA SECCION TRES PAGINA INICIO ---------------------------- */
+
+
+/* catalogo */
+.catalogo{
+    background-color: var(--ColorPrincipal);
+    color: var(--color-p);
+}
+/* footer */
+.footer{
+    background-color: var(--ColorPrincipal);
+    color: var(--color-p);
+}
+
+.links-footer{
+    color: var(--color-p);
+}
+
+.newseller{
+    background-color: var(--seller);
+    cursor: pointer;
+    color: var(--color-p); /* Para que el texto sea visible */
+    left: 0;
+}
+
+.newseller:focus {
+    outline: none; /* Elimina el borde al hacer clic */
+    cursor: text;
+}
+
+.flecha-seller{
+    background-color: var(--seller);
+    padding: 0;
+}
+
+.logos-footer{
+    color: var(--ColorSecundario);
+}
+
+.email{
+    color: var(--ColorSecundario);
+}
