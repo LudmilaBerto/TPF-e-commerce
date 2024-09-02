@@ -100,7 +100,7 @@
 /* ---------------------FINALIZA EL HEADER------------------------------------------- */
 
 
-/* COMIENZA HERO PAGINA INICIO */
+/*--------------------- COMIENZA HERO PAGINA INICIO ---------------------------------- */
 
 .Hero{
     background-color: var(--ColorPrincipal);
@@ -120,3 +120,89 @@
 
 
 /* FINALIZA HERO PAGINA INICIO */
+
+/* COMIENZA SECCION DOS PAGINA INICIO */
+
+.seccionDos-inicio{
+    background-color: var(--ColorPrincipal);
+    color: var(--ColorSecundario);
+}
+
+/* pongo espacio arriba para separarlo del contenido del hero */
+
+.h3-p-sobreEmpresa{
+    padding-top: 150px;
+    padding-bottom: 70px;
+}
+
+.h3-p-sobreEmpresa p{
+    font-size: 14px;
+}
+
+/* contenedor de imagenes contenedorImagenes-living-bedroom */
+
+.contenedorImagenes-living-bedroom{
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a una nueva línea */
+    gap: 10px; /* Espacio entre elementos */
+}
+.contenedorImagenes-bathroom-cocina-escritorio{
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a una nueva línea */
+    gap: 10px; /* Espacio entre elementos */
+}
+
+/* tamaño de las imagenes de categorias */
+.imagenSDinicio1{
+    flex: 1 1 30%; /* Permite que las imágenes ocupen aproximadamente el 30% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción de altura automática */
+    max-width: 100%;
+}
+.imagenSDinicio2{
+    flex: 1 1 30%; /* Permite que las imágenes ocupen aproximadamente el 30% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción de altura automática */
+    max-width: 100%;
+}
+
+/* separo imagenes del baño, living y escritorio */
+
+.contenedorCategoria{
+    margin-left: 15px;
+}
+
+/* Estilos para el overlay  y etiqueta link*/
+
+.link-hover-categoria{
+    text-decoration: none;
+}
+
+/* hover de las imagenes de categorias */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(128,91,51, 0.5); /* Capa semitransparente */
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Transición suave */
+}
+
+.position-relative:hover .overlay {
+    opacity: 1; /* Mostrar el overlay al hacer hover */
+}
+
+.overlay-text {
+    color: var(--ColorSecundario);
+    font-size: 24px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    
+}
+
+.overlay-text i {
+    margin-left: 10px; /* Espacio entre el texto y el ícono */
+}
+
+/* ------------------- FINALIZA SECCION DOS PAGINA INICIO ---------------------------- */
