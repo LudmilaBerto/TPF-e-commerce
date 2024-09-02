@@ -1,27 +1,82 @@
-/* Para pantallas de 1440px o menos */
-@media (max-width: 1440px) {
     /* Estilos específicos para pantallas de hasta 1440px */
+@media (max-width: 1440px) {
 }
 
-/* Para pantallas de 1024px o menos */
-@media (max-width: 1024px) {
+
     /* Estilos específicos para pantallas de hasta 1024px */
+@media (max-width: 1024px) {
 }
 
-/* Para pantallas de 991px o menos */
-@media (max-width: 991px) {
+
+
     /* Estilos específicos para pantallas de hasta 991px */
-   
+@media (max-width: 991px) {
+    /* -------------- PAGINA INICIO --------------------------*/
+
+
+    /* -------------- SECCION HERO PAG INICIO --------------------------*/
+
+    /* Titulo del hero pág. inicio */
+    .seccion-Hero-inicio h1{
+        font-size: 100px !important;
+    }
+
+    /* -------------- SECCION DOS PAG INICIO --------------------------*/
+
+    /* tamaño de las imagenes de Categorias */
+    .imagenSDinicio1, .imagenSDinicio2 {
+        flex: 1 1 45%; /* Ajusto el tamaño base de las imágenes en pantallas más pequeñas */
+    }
+
+
+    /* tamaño de letra del OVERLAY de la img de categorias  */
+    .overlay-text {
+        font-size: 18px !important; /*tamaño texto del overlay*/
+    }
+
+    /* --------------  --------------------------*/
+    /* --------------  --------------------------*/
+
 }
 
-/* Para pantallas de 767px o menos */
-@media (max-width: 767px) {
+
+
     /* Estilos específicos para pantallas de hasta 767px */
+@media (max-width: 767px) {
+  
  
 }
 
-/* Para pantallas de 480px o menos */
+
+    /* Estilos específicos para pantallas de hasta 480px */
 @media (max-width: 480px) {
     /* Estilos específicos para pantallas de hasta 480px */
+    /* -------------- PAGINA INICIO --------------------------*/
+
+    /* -------------- SECCION HERO PAG INICIO --------------------------*/
+
+    /* Titulo y parrafo del hero pág. inicio */
+    .seccion-Hero-inicio h1{
+        font-size: 60px !important;
+    }
+    .seccion-Hero-inicio p{
+        font-size: 12px;
+    }
+
+    /* -------------- SECCION DOS PAG INICIO--------------------------*/
+
+    /* h3 y p de la descripcion sobre la tienda */
+    .h3-p-sobreEmpresa h3{
+        text-align: center;
+        font-size: 20px;
+    }
+    .h3-p-sobreEmpresa p{
+        font-size: 12px;
+    }
+
+    /* tamaño de letra del OVERLAY de la img de categorias  */
+    .overlay-text {
+        font-size: 14px !important;/*tamaño texto del overlay*/
+    }
    
 }
