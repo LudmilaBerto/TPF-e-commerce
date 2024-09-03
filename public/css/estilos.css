@@ -10,8 +10,8 @@
     --ColorTerciario:#B7B7B7;
     --ColorAmarillo:#e97a00;
     --FontFamily:"Open Sans", sans-serif;
+    --FontFamilyRoboto:"Roboto", system-ui;
     /* footer */
-    --color-p:#747474;
     --seller:#414141;
 }
 
@@ -230,25 +230,65 @@
 /* ------------------- FINALIZA SECCION TRES PAGINA INICIO ---------------------------- */
 
 
-/* catalogo */
+/* ------------------- PAGINA CATALOGO ---------------------------- */
 .catalogo{
     background-color: var(--ColorPrincipal);
     color: var(--color-p);
 }
 /* footer */
+
 .footer{
     background-color: var(--ColorPrincipal);
-    color: var(--color-p);
+    color: var(--ColorSecundario);
+    font-family: var(--FontFamilyRoboto);
 }
 
+/* CONTENEDOR DE FOOTER PARTE DE CONTACTOS */
+.contenedorContactoFooter{
+    padding-top: 55px;
+}
+.contenedorInfoContacto{
+    padding-right: 35px;
+}
+.contenedorInfoContacto h4{
+    font-weight: 500;
+}
+.contenedorInfoContacto p{
+    font-size: 12px;
+}
+.comLogo{
+    text-align: center;
+    transform: translate(-80px, -10px);
+}
+.descrpcionCompania{
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--ColorTerciario);
+}
+/* iconos de contacto y ubicacion */
+.iconContact{
+    color: var(--ColorTerciario);
+    padding-right: 5px;
+}
+.titulo-item-footer{
+    font-weight: 600;
+    font-size: 14px;
+}
+/* estilizacion de los link de servicio al consumidor y sobre la compania */
 .links-footer{
-    color: var(--color-p);
+    font-size: 12px;
+    color: var(--ColorTerciario);
+
+}
+.links-footer:hover{
+    color: var(--ColorAmarillo);
 }
 
+/* Input de email para subscripcion */
 .newseller{
     background-color: var(--seller);
     cursor: pointer;
-    color: var(--color-p); /* Para que el texto sea visible */
+    color: var(--ColorSecundario); /* Para que el texto sea visible */
     left: 0;
 }
 
@@ -257,15 +297,26 @@
     cursor: text;
 }
 
-.flecha-seller{
-    background-color: var(--seller);
-    padding: 0;
+.input-group{
+    padding: 0 10px;
+}
+.botonFlecha{
+    color: var(--ColorTerciario);
 }
 
+/* Logos de redes sociales de la compania */
 .logos-footer{
     color: var(--ColorSecundario);
+    padding-right: 15px;
 }
 
-.email{
-    color: var(--ColorSecundario);
+.logos-footer:hover{
+    color: var(--ColorAmarillo);
+}
+
+/* Seccion de derechos reservados */
+
+.derechosReservados{
+    font-size: 12px;
+    font-weight: 300;
 }
