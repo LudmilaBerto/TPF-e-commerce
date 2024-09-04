@@ -1,7 +1,7 @@
 const express=require('express');
 const app=express()
 // constante de rutas
-const tienda = require('./public/router/tienda');
+const tienda = require('./routers/tienda');
 
 
 // Configuro ejs como motor de plantilla
@@ -15,8 +15,13 @@ app.use(express.static('public'))
 app.get('/', (req,res)=>{
     res.render('index')
 })
-// Rutas estaticas
+
+// Rutas dinamicas
 app.use('/tienda', tienda);
+
+
+
+// Rutas estaticas
 
 // Configuración del servidor
 app.listen(4500, ()=>{
