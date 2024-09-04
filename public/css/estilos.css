@@ -241,14 +241,18 @@
     font-weight: 600;
 }
 .descripcionArticulo p{
-    font-size: 14px;
+    font-size: 12px;
+    color: var(--ColorTerciario);
 }
-
 
 .ul-descripcion-sofa{
-    font-weight: 600;
+    font-size: 13px;
+    font-weight: 400;
 }
 
+.hover-Amarillo:hover{
+    color: #e97a00 !important;
+}
 
 
 
