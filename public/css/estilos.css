@@ -353,3 +353,37 @@
     font-size: 12px;
     font-weight: 300;
 }
+
+
+/* ------------------- PAGINA CATALOGO ---------------------------- */
+.catalogo{
+    background-color: var(--ColorPrincipal);
+    color: var(--ColorTerciario);
+
+
+}
+/* Estilizacion de los deplegables */
+.btn-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* letra totalmente a la izquirda */
+.text-left {
+    margin-right: auto;
+}
+/* icono a la derecha */
+.text-right {
+    margin-left: auto;
+}
+.fondo-desplegables{
+    background-color: var(--ColorPrincipal );
+}
+/* estilo para la primera imagen */
+.img-fluid {
+    width: 100%;
+    height: 30vh; /* 30% del alto de la ventana */
+    object-fit: cover; /*mantener proporciones */
+}
+
+/* ------------------- FINALIZA CATALOGO ---------------------------- */
