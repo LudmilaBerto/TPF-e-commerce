@@ -16,7 +16,9 @@ app.get('/', (req,res)=>{
 
 
 // Rutas especificas
-
+app.get('/catalogo', (req,res)=>{
+    res.render('catalogo')
+})
 
 
 // Configuración del servidor
