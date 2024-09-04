@@ -260,14 +260,15 @@
 
 
 /* ------------------- FINALIZA SECCION CUATRO PAGINA INICIO ---------------------------- */
-=======
 
 /* ------------------- PAGINA CATALOGO ---------------------------- */
 .catalogo{
     background-color: var(--ColorPrincipal);
     color: var(--color-p);
 }
-/* footer */
+
+
+/* ------------------------ FOOTER ------------------------------------------ */
 
 .footer{
     background-color: var(--ColorPrincipal);
