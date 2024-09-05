@@ -355,12 +355,25 @@
 }
 
 
-/* ------------------- PAGINA CATALOGO ---------------------------- */
 .catalogo{
     background-color: var(--ColorPrincipal);
     color: var(--ColorTerciario);
+    font-family: var(--FontFamily);
 
+}
+.color-terciario{
+    color: var(--ColorTerciario) !important;
+}
+/* EStilizar busqueda por despleado */
+.shortby{
+    background-color: var(--seller) !important;
+    cursor: pointer;
+    color: var(--ColorSecundario) !important; /* Para que el texto sea visible */
 
+}
+.shortby:hover{
+    color: var(--ColorAmarillo) !important;
+    font-weight: bold;
 }
 /* Estilizacion de los deplegables */
 .btn-custom {
@@ -376,8 +389,43 @@
 .text-right {
     margin-left: auto;
 }
-.fondo-desplegables{
-    background-color: var(--ColorPrincipal );
+/* barra de precio */
+.slider {
+    width: 300px;
+    position: relative;
+    margin: 50px auto;
+}
+.slider-track {
+    height: 4px;
+    width: 100%;
+    background: #ddd;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slider-thumb {
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+/* clase para click en partes del slide */
+.sub-lide:active{
+    background-color: var(--ColorAmarillo) !important;
+}
+.sub-lide:visisted{
+    background-color: var(--ColorPrincipal) !important;
+    color: var(--ColorSecundario);
+    font-weight: bold;
+}
+/* clase para poner bien el color del fondo */
+.ajustar-fondo{
+    background-color: var(--ColorPrincipal ) !important;
+    color: var(--ColorSecundario) !important;
 }
 /* estilo para la primera imagen */
 .img-fluid {
@@ -387,3 +435,4 @@
 }
 
 /* ------------------- FINALIZA CATALOGO ---------------------------- */
+

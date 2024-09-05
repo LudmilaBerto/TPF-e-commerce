@@ -1,7 +1,7 @@
 const express=require('express');
 const app=express()
 // constante de rutas
-const tienda = require('./routers/tienda');
+const tienda = require('./routers/tienda.route');
 
 
 // Configuro ejs como motor de plantilla
