@@ -440,6 +440,10 @@
 }
 /* SECCION 3 CARDS */
 
+/* Iconos mas pequeños */
+.icono-chico{
+    font-size: 8px;
+}
 /* Estilo para que todas las imagenes ocupen lo mismo */
 .card-img-top {
     object-fit: cover; /* Asegura que la imagen cubra el contenedor sin deformarse */
