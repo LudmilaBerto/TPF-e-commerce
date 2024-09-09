@@ -1,7 +1,7 @@
 const express=require('express');
 const app=express()
 // constante de rutas
-const tienda = require('./routers/tienda');
+const tienda = require('./routers/tienda.route');
 
 
 // Configuro ejs como motor de plantilla
@@ -25,5 +25,5 @@ app.use('/tienda', tienda);
 
 // Configuración del servidor
 app.listen(4500, ()=>{
-    console.log('El servidor esta corriendo')
+    console.log('El servidor esta corriendo en http://localhost:4500/')
 })

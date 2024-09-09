@@ -6,4 +6,3 @@ router.get('/catalogo',(req,res)=>{
 })
 
 module.exports = router;
-

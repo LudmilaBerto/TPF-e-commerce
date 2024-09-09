@@ -8,6 +8,7 @@
     --ColorPrincipal:#272727;
     --ColorSecundario:#f4f4f4;
     --ColorTerciario:#B7B7B7;
+    --colorCuartoMenosBlanco:#e5e4e3;
     --ColorAmarillo:#e97a00;
     --FontFamily:"Open Sans", sans-serif;
     --FontFamilyRoboto:"Roboto", system-ui;
@@ -261,13 +262,6 @@
 
 /* ------------------- FINALIZA SECCION CUATRO PAGINA INICIO ---------------------------- */
 
-/* ------------------- PAGINA CATALOGO ---------------------------- */
-.catalogo{
-    background-color: var(--ColorPrincipal);
-    color: var(--color-p);
-}
-
-
 /* ------------------------ FOOTER ------------------------------------------ */
 
 .footer{
@@ -354,20 +348,115 @@
     font-weight: 300;
 }
 
+/* ------------------- INICIO CATALOGO ---------------------------- */
 
-/* ------------------- PAGINA CATALOGO ---------------------------- */
 .catalogo{
     background-color: var(--ColorPrincipal);
     color: var(--ColorTerciario);
-
+    font-family: var(--FontFamilyRoboto);
 
 }
-/* Estilizacion de los deplegables */
+
+.color-blanco{
+    color: var(--ColorSecundario);
+}
+/* SECCION 1 imagen + inicio/tienda */
+
+/* estilo para la primera imagen */
+.img-fluid{
+    width: 100%;
+    height: 30vh; /* 30% del alto de la ventana */
+    object-fit: cover; /*mantener proporciones */
+}
+
+.shortby-boton-load-more{
+    background-color: var(--seller) !important;
+    cursor: pointer;
+    color: var(--ColorSecundario); 
+    
+}
+/* EStilizar busqueda desplegada */
+.shortby{
+    background-color: var(--seller) !important;
+    cursor: pointer;
+    color: var(--ColorSecundario) !important; 
+
+}
+.shortby:hover{
+    color: var(--ColorAmarillo) !important;
+    font-weight: bold;
+}
+/* SECCION 2 DESPLEGABLES */
+/* catalogo */
+
+/* quitar margen o padding izquierdo de los desplegables */
+.btn-sin-left{
+    padding-left: 0 !important;
+}
+/* espaciado entre span -- i*/
 .btn-custom {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+/* color para los elementos del desplegables */
+.color-terciario{
+    color: var(--ColorTerciario) !important;
+}
+
+/* barra de precio */
+.slider {
+    width: 300px;
+    position: relative;
+    margin: 50px auto;
+}
+.slider-track {
+    height: 4px;
+    width: 100%;
+    background: #ddd;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slider-thumb {
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+/* clase para click en partes del slide */
+.sub-lide:active{
+    background-color: var(--ColorAmarillo) !important;
+}
+.sub-lide:visisted{
+    background-color: var(--ColorPrincipal) !important;
+    color: var(--ColorSecundario);
+    font-weight: bold;
+}
+/* SECCION 3 CARDS */
+
+/* Iconos mas pequeños */
+.icono-chico{
+    font-size: 10px;
+}
+/* Estilo para que todas las imagenes ocupen lo mismo */
+.card-img-top {
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin deformarse */
+}
+
+/* TOTAL RESULTADOS Y BUSQUEDA POR */
+
+/* Clase para agregar subrayado */
+.subrayado{
+    text-decoration: underline;
+    color: var(--ColorSecundario) !important;
+}
+
 /* letra totalmente a la izquirda */
 .text-left {
     margin-right: auto;
@@ -376,14 +465,13 @@
 .text-right {
     margin-left: auto;
 }
-.fondo-desplegables{
-    background-color: var(--ColorPrincipal );
-}
-/* estilo para la primera imagen */
-.img-fluid {
-    width: 100%;
-    height: 30vh; /* 30% del alto de la ventana */
-    object-fit: cover; /*mantener proporciones */
+
+/* clase para poner bien el color del fondo en despleables y cards*/
+.ajustar-fondo{
+    background-color: var(--ColorPrincipal ) !important;
+    color: var(--ColorSecundario) !important;
 }
 
+
 /* ------------------- FINALIZA CATALOGO ---------------------------- */
+
