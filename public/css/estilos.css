@@ -261,6 +261,27 @@
 
 
 /* ------------------- FINALIZA SECCION CUATRO PAGINA INICIO ---------------------------- */
+/* ------------------- COMIENZA SECCION CINCO PAGINA INICIO ---------------------------- */
+.seccionCinco-inicio{
+    background-color: var(--ColorPrincipal);
+    color: var(--ColorSecundario);
+    padding-top: 150px;
+}
+
+.descripcionDescuento h4{
+    font-family: var(--FontFamily);
+    font-weight: 600;
+}
+.descripcionDescuento p{
+    font-family: var(--FontFamilyRoboto);
+    font-size: 12px;
+    font-weight: 300;
+}
+
+
+
+/* ------------------- FINALIZA SECCION CINCO PAGINA INICIO ---------------------------- */
+
 
 /* ------------------------ FOOTER ------------------------------------------ */
 
