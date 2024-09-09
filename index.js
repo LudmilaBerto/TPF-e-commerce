@@ -25,5 +25,5 @@ app.use('/tienda', tienda);
 
 // Configuración del servidor
 app.listen(4500, ()=>{
-    console.log('El servidor esta corriendo')
+    console.log('El servidor esta corriendo en http://localhost:4500/')
 })
