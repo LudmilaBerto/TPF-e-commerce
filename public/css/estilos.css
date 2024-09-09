@@ -261,6 +261,65 @@
 
 
 /* ------------------- FINALIZA SECCION CUATRO PAGINA INICIO ---------------------------- */
+/* ------------------- COMIENZA SECCION CINCO PAGINA INICIO ---------------------------- */
+.seccionCinco-inicio{
+    background-color: var(--ColorPrincipal);
+    color: var(--ColorSecundario);
+    padding-top: 150px;
+}
+
+.descripcionDescuento h4{
+    font-family: var(--FontFamily);
+    font-weight: 600;
+}
+.descripcionDescuento p{
+    font-family: var(--FontFamilyRoboto);
+    font-size: 12px;
+    font-weight: 300;
+}
+
+
+
+
+
+/* ------------------- FINALIZA SECCION CINCO PAGINA INICIO ---------------------------- */
+/* ------------------- COMIENZA SECCION SEIS PAGINA INICIO ---------------------------- */
+
+.seccionSeis-inicio{
+    background-color: var(--ColorPrincipal);
+    color: var(--ColorSecundario);
+    padding-top: 150px;
+}
+
+
+.imagenSDinicio3{
+    flex: 1 1 100%; /* Permite que las imágenes ocupen aproximadamente el 30% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción de altura automática */
+    max-width: 100%;
+}
+.contenedorOverlay-h3-p h6{
+    font-size: 14px;
+    font-weight: 400;
+}
+.contenedorOverlay-h3-p p{
+    font-size: 12px;
+    color: var(--ColorTerciario);
+}
+.contenedorOverlay-h3-p2 h6{
+    font-size: 14px;
+    font-weight: 400;
+    white-space: nowrap;
+    margin-left: 15px;
+}
+.contenedorOverlay-h3-p2 p{
+    font-size: 12px;
+    color: var(--ColorTerciario);
+    margin-left: 15px;
+}
+
+/* ------------------- FINALIZA SECCION SEIS PAGINA INICIO ---------------------------- */
+
+
 
 /* ------------------------ FOOTER ------------------------------------------ */
 

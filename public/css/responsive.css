@@ -82,5 +82,10 @@
     .overlay-text {
         font-size: 14px !important;/*tamaño texto del overlay*/
     }
+
+    /* -------------- SECCION CINCO PAG INICIO--------------------------*/
+    .descripcionDescuento h4{
+        text-align: center;
+    }
    
 }
