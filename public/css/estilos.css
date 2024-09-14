@@ -18,6 +18,12 @@
 
 
 
+/* ------------------ BODY  -------------------*/
+.body{
+    background-color: var(--ColorPrincipal);
+}
+
+
 
 
 /* ---------------------COMIENZA EL HEADER------------------------------------------- */
@@ -104,6 +110,7 @@
 
 
 /*--------------------- COMIENZA HERO PAGINA INICIO ---------------------------------- */
+
 
 .Hero{
     background-color: var(--ColorPrincipal);
