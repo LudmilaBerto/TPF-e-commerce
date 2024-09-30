@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
 *{
     padding: 0;
     margin: 0;
@@ -541,3 +543,268 @@
 
 /* ------------------- FINALIZA CATALOGO ---------------------------- */
 
+
+/* ------------------- COMIENZA PRODUCTO ESPECIFICO ---------------------------- */
+
+
+/* ----------------------SECCION UNO - PÁG PRODUCTO -----------------------------*/
+.main-DescProduct{
+    padding-top: 20px;
+    font-family: var(--FontFamilyRoboto);
+}
+.rutaActual{
+    text-decoration: none;
+    color: var(--ColorTerciario);
+    font-family: var(--FontFamilyRoboto);
+    font-weight: 400;
+    font-size: 14px;
+}
+.rutaActual:hover{
+    text-decoration: underline;
+}
+.rutaActual:active{
+    color: var(--ColorAmarillo);
+}
+
+
+/* Lista de imágenes del producto */
+
+.seccionUno-PagProduct {
+    overflow: hidden; /* Oculta cualquier contenido que desborde el contenedor */
+}
+
+#imageList {
+    max-height: 380px; /* Establece una altura máxima para la lista de imágenes */
+    overflow-y: auto; /* Permite el desplazamiento vertical si las imágenes son demasiadas */
+    scrollbar-width: none; /* Para Firefox: Oculta la barra de desplazamiento */
+    border-radius: 0;
+}
+
+/* Para Chrome, Safari y otros navegadores webkit */
+#imageList::-webkit-scrollbar {
+    display: none; /* Oculta la barra de desplazamiento */
+}
+
+#imageList img {
+    max-width: 100%; /* Limita el ancho de las imágenes al 100% de su contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+
+/* imagenes del carrucel */
+.carrucel-imagenes{
+    padding-left: 0px;
+}
+.carrucel-imagenes img {
+    width: 100%;           /* Se ajusta al ancho del contenedor */
+    height: 380px;         /* Altura fija */
+    object-fit: cover;     /* Mantiene las proporciones y cubre el contenedor */
+}
+
+.carousel-indicators button {
+    width: 5px !important;
+    height: 5px !important;
+    border-radius: 50% !important; /* Hace que el botón sea circular */
+}
+
+.carousel-indicators .active {
+    background-color: #fff; /* Color del botón activo */
+}
+
+.icono-antes-despues{
+    font-size: 25px;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%; /* Para hacer el fondo circular */
+    padding: 3px 9px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Añadir sombra suave */
+}
+
+.descripcionProduct h5{
+    font-family: var(--FontFamil);
+    color: var(--ColorSecundario);
+}
+.descripcionProduct hr{
+    color: var(--ColorTerciario);
+}
+
+/* Titulos de la pagina producto */
+.titulo{
+    font-family: var(--FontFamily);
+    font-size: 20px ;
+    color:  #ffffffd8;
+}
+/* le doy estilos a los numero de puntuacion y reseña */
+.PuntuacionEstrella i,p{
+    font-family: var(--FontFamilyRoboto);
+    color: var(--ColorSecundario);
+    margin-right: 4px;
+}
+.contadorReseña{
+    color: #ffffff;
+}
+.contadorReseña:hover{
+    text-decoration: underline !important;
+}
+/*Estilos para la Descripcion breve del producto */
+.descripcionProducto{
+    font-family: var(--FontFamilyRoboto);
+    color:#b7b7b7 ;
+    font-size: 12px;
+}
+
+/* Le doy un margin-bottom a los nombre de los colores */
+.circulos-colores{
+    margin-bottom: 25px;
+}
+
+
+
+/* BOTON de agregar al carrito */
+.botonAddCarrito{
+    font-family: var(--FontFamilyRoboto);
+    font-weight: 500;
+    font-size: 13px;
+    background-color: #ffffff;
+    border-radius: 2px !important;
+    margin-top: -8px;
+}
+.botonAddCarrito:hover{
+    background-color: #ffffff;
+    color: #e97a00;
+}
+
+/* BOTON de agregar a favoritos */
+.iconCorazon{
+    background-color: #333333;
+    color: #ffffff;
+    border-radius: 3px !important;
+    margin-left: 8px;
+    margin-top: -8px;
+}
+.iconCorazon:hover{
+    color: #e97a00;
+    background-color: #333333 !important;
+
+}
+
+/*circulos de colores con imagenes */
+
+.imgCirculoColor{
+    width: 28px;
+    height: 25px;
+    border-radius: 50%;
+    padding: 0;
+    margin-top: 4px;
+}
+.imgCirculoColor:focus,
+.imgCirculoColor:active {
+    outline: none;            /* Sin contorno por defecto */
+    border: 2px solid #ffff; /* Borde amarillo al hacer clic o al enfocar */
+    border-radius: 50%;      /* Borde redondeado al 50% */
+}
+
+/* estilizacion a las etiquetas <p> de detalles de envio y devolucion */
+.entrega-devolucion{
+    font-family: var(--FontFamilyRoboto);
+    color: #ffffffd8;
+    font-size: 13px;
+}
+.entrega-devolucion span{
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* ----------------------SECCION DOS - PÁG PRODUCTO -----------------------------*/
+
+
+.hr-inline {
+    width: 50px; /* Ajusta el ancho del "hr" */
+    border-top: 1px solid #b7b7b77f; /* Estilo del "hr" */
+    margin-top: 5px;
+    padding: 0 80px; /* Ajusta el espacio alrededor */
+    vertical-align: middle; /* Alinea con el texto */
+}
+
+.subtituloCaracteristicas{
+    font-family: var(--FontFamily);
+    font-size: 14px;
+    color: #ffffffd8;
+}
+
+.caracteristicaProducto{
+    font-weight: 600;
+    font-size: 13px;
+    color: #b7b7b7c0;
+
+}
+
+/* ----------------------SECCION TRES - PÁG PRODUCTO -----------------------------*/
+
+.img-usuario{
+    width: 65px;
+    height: 40px;
+}
+.contenedor-img-nombre-fecha-usuario hr{
+    color: var(--ColorTerciario);
+}
+
+.verMasReseñas{
+    color: var(--ColorSecundario) !important;
+    font-weight: 600;
+    font-size: 16px;  
+}
+.verMasReseñas:hover{
+    color: var(--ColorAmarillo) !important;
+}
+
+/* ----------------------SECCION CUATRO - PÁG PRODUCTO -----------------------------*/
+
+.contenedorDeCards .card {
+    background-color: #272727; /* Fondo de las tarjetas */
+    border: none; /*borde de las tarjetas*/
+}
+.contenedorDeCards .card:hover{
+    background-color: #383838;
+}
+/* Contenedor de la imagen para mantener la proporción */
+.img-container {
+    width: 100%;
+    aspect-ratio: 4/3; /* Relación de aspecto 4:3 (puedes ajustar según tus imágenes) */
+    border-radius: 2px;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    border-radius: 2px;   /* border radius de la imagenes de las tarjetas */
+}
+  
+.contenedorDeCards .card .titulo-tarjeta {
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    color: #ffff; 
+    padding-top: 15px;
+    font-weight: 400;
+}
+  
+
+/* INDEX:JS circulos de colores disponibles del producto */
+.colores-disponibles {
+    margin: 20px 0;
+  }
+  
+  .color-circles {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .color-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #ccc; /* Opcional: para un borde alrededor del círculo */
+    cursor: pointer;
+  }
+
+/* ------------------- FINALIZA PRODUCTO ESPECIFICO ---------------------------- */
