@@ -617,7 +617,7 @@
 .icono-antes-despues{
     font-size: 25px;
     color: #000;
-    background-color: #fff;
+    background-color: var(--ColorSecundario);
     border: none;
     border-radius: 50%; /* Para hacer el fondo circular */
     padding: 3px 9px;
@@ -635,8 +635,9 @@
 /* Titulos de la pagina producto */
 .titulo{
     font-family: var(--FontFamily);
+    font-weight: 500;
     font-size: 20px ;
-    color:  #ffffffd8;
+    color:  var(--ColorSecundario);
 }
 /* le doy estilos a los numero de puntuacion y reseña */
 .PuntuacionEstrella i,p{
@@ -645,7 +646,7 @@
     margin-right: 4px;
 }
 .contadorReseña{
-    color: #ffffff;
+    color: var(--ColorSecundario);
 }
 .contadorReseña:hover{
     text-decoration: underline !important;
@@ -653,7 +654,7 @@
 /*Estilos para la Descripcion breve del producto */
 .descripcionProducto{
     font-family: var(--FontFamilyRoboto);
-    color:#b7b7b7 ;
+    color:var(--ColorTerciario) ;
     font-size: 12px;
 }
 
@@ -669,25 +670,25 @@
     font-family: var(--FontFamilyRoboto);
     font-weight: 500;
     font-size: 13px;
-    background-color: #ffffff;
+    background-color: var(--ColorSecundario);
     border-radius: 2px !important;
     margin-top: -8px;
 }
 .botonAddCarrito:hover{
-    background-color: #ffffff;
-    color: #e97a00;
+    background-color: var(--ColorSecundario);
+    color: var(--ColorAmarillo);
 }
 
 /* BOTON de agregar a favoritos */
 .iconCorazon{
     background-color: #333333;
-    color: #ffffff;
+    color: var(--ColorSecundario);
     border-radius: 3px !important;
     margin-left: 8px;
     margin-top: -8px;
 }
 .iconCorazon:hover{
-    color: #e97a00;
+    color: var(--ColorAmarillo);
     background-color: #333333 !important;
 
 }
@@ -715,7 +716,7 @@
     font-size: 13px;
 }
 .entrega-devolucion span{
-    color: #ffffff;
+    color: var(--ColorSecundario);
     font-weight: 500;
 }
 
@@ -755,7 +756,7 @@
 
 .verMasReseñas{
     color: var(--ColorSecundario) !important;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;  
 }
 .verMasReseñas:hover{
@@ -765,7 +766,7 @@
 /* ----------------------SECCION CUATRO - PÁG PRODUCTO -----------------------------*/
 
 .contenedorDeCards .card {
-    background-color: #272727; /* Fondo de las tarjetas */
+    background-color: var(--ColorPrincipal); /* Fondo de las tarjetas */
     border: none; /*borde de las tarjetas*/
 }
 .contenedorDeCards .card:hover{
@@ -786,7 +787,7 @@
   
 .contenedorDeCards .card .titulo-tarjeta {
     text-transform: uppercase; /* Convertir el texto a mayúsculas */
-    color: #ffff; 
+    color: var(--ColorSecundario); 
     padding-top: 15px;
     font-weight: 400;
 }
