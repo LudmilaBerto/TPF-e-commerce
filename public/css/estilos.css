@@ -367,7 +367,7 @@
 }
 .titulo-item-footer{
     font-weight: 600;
-    font-size: 14px;
+    font-size: 13px;
 }
 /* estilizacion de los link de servicio al consumidor y sobre la compania */
 .links-footer{
@@ -415,6 +415,9 @@
     font-size: 12px;
     font-weight: 300;
 }
+
+/* ------------------------ FINAL FOOTER ------------------------------------------ */
+
 
 /* ------------------- INICIO CATALOGO ---------------------------- */
 

@@ -34,8 +34,18 @@
         font-size: 18px !important; /*tamaño texto del overlay*/
     }
 
+
+
+    /* -------------- FOOTER --------------------------*/
+    .descrpcionCompania{
+        font-size: 10px !important;
+    }
+    .titulo-item-footer{
+        font-size: 11px;
+    }
+
     /* --------------  --------------------------*/
-    /* --------------  --------------------------*/
+
 
 }
 
