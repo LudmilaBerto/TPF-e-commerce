@@ -427,19 +427,25 @@
     font-family: var(--FontFamilyRoboto);
 
 }
-
+/* cambiar colores de texto*/
 .color-blanco{
     color: var(--ColorSecundario);
 }
+/* color para los elementos del desplegables */
+.color-terciario{
+    color: var(--ColorTerciario) !important;
+}
+.color-titulo{
+    color: var(--colorCuartoMenosBlanco);
+}
+/* clase para poner bien el color del fondo en despleables y cards*/
+.ajustar-fondo{
+    background-color: var(--ColorPrincipal ) !important;
+    color: var(--ColorSecundario) !important;
+}
 /* SECCION 1 imagen + inicio/tienda */
 
-/* estilo para la primera imagen */
-.img-fluid{
-    width: 100%;
-    height: 30vh; /* 30% del alto de la ventana */
-    object-fit: cover; /*mantener proporciones */
-}
-
+/* BOTON ORDEN DE CARGA */
 .shortby-boton-load-more{
     background-color: var(--seller) !important;
     cursor: pointer;
@@ -460,64 +466,121 @@
 /* SECCION 2 DESPLEGABLES */
 /* catalogo */
 
-/* quitar margen o padding izquierdo de los desplegables */
-.btn-sin-left{
-    padding-left: 0 !important;
-}
 /* espaciado entre span -- i*/
 .btn-custom {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-/* color para los elementos del desplegables */
-.color-terciario{
-    color: var(--ColorTerciario) !important;
+.btn_font{
+    font-size: 14px;
 }
+
 
 /* barra de precio */
-.slider {
-    width: 300px;
+
+/* Le doy un margin-bottom a los nombre de los colores */
+.circulos-coloresCatalogo{
+    margin-bottom: 25px;
+}
+
+/*circulos de colores con imagenes */
+
+.coloresDisponibles{
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    border: 2px,solid,white;
+}
+
+.sub-lide-colores:hover{
+    
+    border: 3px, solid, white;
+    border-radius:  50px;
+}
+
+/* PERSONALIZACION BARRA PRECIO */
+.barraPrecio {
     position: relative;
-    margin: 50px auto;
-}
-.slider-track {
-    height: 4px;
     width: 100%;
-    background: #ddd;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    height: 25px;
 }
-.slider-thumb {
+.barraPrecio input[type="range"] {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+}
+.barraPrecio input[type="range"]::-webkit-slider-thumb {
+    pointer-events: all;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.barraPrecio input[type="range"]::-moz-range-thumb {
+    pointer-events: all;
     width: 20px;
     height: 20px;
     background: #007bff;
     border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.barraPrecio input[type="range"]::-moz-range-thumb {
+    pointer-events: all;
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
     cursor: pointer;
 }
-/* clase para click en partes del slide */
+.barraPrecio p {
+    position: absolute;
+    top: 10px;
+    font-size: 14px;
+    transform: translateX(-50%);
+}
+/* por si queremos que el rango tenga un color distinto */
+.barraPrecio .barraRango {
+    position: absolute;
+    height: 5px;
+    background-color: transparent;
+    
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+/* clase para click en partes del slide al abrirse */
 .sub-lide:active{
-    background-color: var(--ColorAmarillo) !important;
+    background-color: var(--ColorPrincipal) !important;
+}
+.sub-lide:hover{
+    background-color: var(--ColorPrincipal) !important;
+    color: var(--ColorSecundario) !important;
 }
 .sub-lide:visisted{
     background-color: var(--ColorPrincipal) !important;
     color: var(--ColorSecundario);
     font-weight: bold;
 }
+.liPrice{
+    background-color: var(--ColorPrincipal) !important;
+}
 /* SECCION 3 CARDS */
 
-/* Iconos mas pequeños */
-.icono-chico{
-    font-size: 10px;
-}
+
 /* Estilo para que todas las imagenes ocupen lo mismo */
 .card-img-top {
     object-fit: cover; /* Asegura que la imagen cubra el contenedor sin deformarse */
+    
 }
 
 /* TOTAL RESULTADOS Y BUSQUEDA POR */
@@ -525,7 +588,8 @@
 /* Clase para agregar subrayado */
 .subrayado{
     text-decoration: underline;
-    color: var(--ColorSecundario) !important;
+    color: var(--ColorTerciario) !important;
+
 }
 
 /* letra totalmente a la izquirda */
@@ -535,12 +599,6 @@
 /* icono a la derecha */
 .text-right {
     margin-left: auto;
-}
-
-/* clase para poner bien el color del fondo en despleables y cards*/
-.ajustar-fondo{
-    background-color: var(--ColorPrincipal ) !important;
-    color: var(--ColorSecundario) !important;
 }
 
 
