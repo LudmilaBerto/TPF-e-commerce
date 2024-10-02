@@ -559,10 +559,15 @@
 
 /*circulos de colores con imagenes */
 
-.coloresDisponibles{
-    width: 10%;
-    height: 10%;
-    border-radius: 50%;
+
+.tamaño_circulos{
+    width: 18px !important;
+    height: 15px !important;
+    border-radius: 50% !important;
+    padding: 0 !important;
+    margin-left: 10px  !important;
+    margin-right: -5px !important;
+    margin-top: 4px !important;
 }
 
 .sub-lide-colores:hover{
@@ -833,7 +838,7 @@
     aspect-ratio: 4/3; /* Relación de aspecto 4:3 (puedes ajustar según tus imágenes) */
     border-radius: 2px;
 }
-.card img{
+.imga{
     width: 100%;
     height: 100%;
     object-fit: contain; 
