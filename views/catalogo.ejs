@@ -154,15 +154,15 @@
                         
                         <a href="#" class="text-decoration-none col-12 col-md-4">
                         <div class="card ajustar-fondo border-0">
-                            <div class="ratio ratio-1x1 imagen_catalogo px-0 mx-0">
-                                <img class="rounded-0 img-top card-img-top" alt="imagen card" src="<%= producto.imagenDestacada %>">
+                            <div class="ratio ratio-4x3 img-top card-img-top px-0 mx-0">
+                                <img class="rounded-0 " alt="imagen card" src="<%= producto.imagenDestacada %>">
                             </div>
                             <div class="card-body px-0">
                                 <h6 class="fw-normal text-start color-titulo pb-0 mb-0"><%= producto.nombre %></h6>
                                 <!-- imagen colores -->
-                                <div class="mt-1 row circulos-colores mb-2">
+                                <div class="mt-1 row circulos-colores mb-2 coloresDisponibles">
                                     <% for (const [color, url] of producto.colores) { %>
-                                        <img src="<%= url %>" alt="<%= color %>" class="imgCirculoColorCatalogo pb-0 mb-0">
+                                        <img src="<%= url %>" alt="<%= color %>" class="coloresDisponibles pb-0 mb-0">
                                     <% } %>
                                 </div>
                                 <h6 class="card-text text-start mb-3">$ <%= producto.precio %></h6>

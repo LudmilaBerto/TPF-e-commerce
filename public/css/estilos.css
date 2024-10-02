@@ -438,6 +438,9 @@
 .color-titulo{
     color: var(--colorCuartoMenosBlanco);
 }
+.liPrice{
+    background-color: var(--ColorPrincipal) !important;
+}
 /* clase para poner bien el color del fondo en despleables y cards*/
 .ajustar-fondo{
     background-color: var(--ColorPrincipal ) !important;
@@ -476,29 +479,20 @@
     font-size: 14px;
 }
 
-
-/* barra de precio */
-
-/* Le doy un margin-bottom a los nombre de los colores */
-.circulos-coloresCatalogo{
-    margin-bottom: 25px;
+/* ------------------- FILTROS ---------------------------- */
+/* ClASE PARA EL CONTENIDO DE LAS SLIDE*/
+.sub-lide:active{
+    background-color: var(--ColorPrincipal) !important;
 }
-
-/*circulos de colores con imagenes */
-
-.coloresDisponibles{
-    width: 10%;
-    height: 10%;
-    border-radius: 50%;
-    border: 2px,solid,white;
+.sub-lide:hover{
+    background-color: var(--ColorPrincipal) !important;
+    color: var(--ColorSecundario) !important;
 }
-
-.sub-lide-colores:hover{
-    
-    border: 3px, solid, white;
-    border-radius:  50px;
+.sub-lide:visited{
+    background-color: var(--ColorPrincipal) !important;
+    color: var(--ColorSecundario);
+    font-weight: bold;
 }
-
 /* PERSONALIZACION BARRA PRECIO */
 .barraPrecio {
     position: relative;
@@ -557,23 +551,26 @@
     transform: translateY(-50%);
     z-index: 1;
 }
+/* CIRCULOS COLORES */
+/* Le doy un margin-bottom a los nombre de los colores */
+.circulos-coloresCatalogo{
+    margin-bottom: 25px;
+}
 
-/* clase para click en partes del slide al abrirse */
-.sub-lide:active{
-    background-color: var(--ColorPrincipal) !important;
+/*circulos de colores con imagenes */
+
+.coloresDisponibles{
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
 }
-.sub-lide:hover{
-    background-color: var(--ColorPrincipal) !important;
-    color: var(--ColorSecundario) !important;
+
+.sub-lide-colores:hover{
+    
+    border: 3px, solid, white;
+    border-radius:  50px;
 }
-.sub-lide:visisted{
-    background-color: var(--ColorPrincipal) !important;
-    color: var(--ColorSecundario);
-    font-weight: bold;
-}
-.liPrice{
-    background-color: var(--ColorPrincipal) !important;
-}
+
 /* SECCION 3 CARDS */
 
 
