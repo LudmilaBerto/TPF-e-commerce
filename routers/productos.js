@@ -10,6 +10,10 @@ router.route('/').get(getProductos).post(postProducto)
 // http://localhost:4500/tienda/productos/:id
 router.route('/productos/:id').get(getProducto).put(putProducto).delete(deleteProducto)
   
+router.get('/carrito',(req,res)=>{
+    res.render('carrito')
+})
+
 
 //exporto al index.js
 module.exports = router

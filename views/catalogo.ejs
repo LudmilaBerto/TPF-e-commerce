@@ -156,12 +156,12 @@
                             <div class="px-0 mx-0 pb-0 ratio ratio-4x3 img-top card-img-top ">
                                 <img class="rounded-0 " alt="imagen card" src="<%= producto.imagenDestacada %>">
                             </div>
-                            <div class="card-body px-0">
+                            <div class="card-body px-0 ">
                                 <h6 class="fw-normal text-start  pb-0 mb-0 color-titulo"><%= producto.nombre %></h6>
                                 <!-- imagen colores -->
                                 <div class="mt-1 row mb-2 circulos-colores">
                                     <% for (const [color, url] of producto.colores) { %>
-                                        <img src="<%= url %>" alt="<%= color %>" class="pb-0 mb-0 tamaño_circulos ">
+                                        <img src="<%= url %>" alt="<%= color %>" class="pb-0 mb-0 tamano_circulos ">
                                     <% } %>
                                 </div>
                                 <h6 class="card-text text-start mb-3">$ <%= producto.precio %></h6>

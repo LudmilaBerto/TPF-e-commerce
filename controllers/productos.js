@@ -10,9 +10,11 @@ exports.getProductos=async(req,res,next)=>{
 	try{
 		const productos= await Productos.find()
 		if (!productos) {
+
             return res.status(404).json({ mensaje: 'Productos no encontrado' });
         }
 		res.render('catalogo',{productos})
+		
 
 	}catch(error){
 		res.status(400).json({mensaje:`Ocurrió un error: ${error.message}`}) 

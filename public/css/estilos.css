@@ -560,10 +560,21 @@
 /*circulos de colores con imagenes */
 
 
-.tamaño_circulos{
-    width: 18px !important;
-    height: 15px !important;
+.tamano_circulos{
+    width: 10px !important;
+    height: 10px !important;
     border-radius: 50% !important;
+    padding: 0 !important;
+    margin-left: 10px  !important;
+    margin-right: -5px !important;
+    margin-top: 4px !important;
+}
+
+.tamano_circulos:hover{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    border: 1px, solid, white;
     padding: 0 !important;
     margin-left: 10px  !important;
     margin-right: -5px !important;
@@ -838,7 +849,7 @@
     aspect-ratio: 4/3; /* Relación de aspecto 4:3 (puedes ajustar según tus imágenes) */
     border-radius: 2px;
 }
-.imga{
+.imagenVistaReciente{
     width: 100%;
     height: 100%;
     object-fit: contain; 
@@ -872,3 +883,69 @@
   }
 
 /* ------------------- FINALIZA PRODUCTO ESPECIFICO ---------------------------- */
+/* ------------------- INICIA CARRITO ---------------------------- */
+
+
+.carrito{
+    background-color: var(--ColorPrincipal);
+    color: var(--ColorTerciario);
+    font-family: var(--FontFamilyRoboto);
+    font-size: 14px;
+    font-weight: 500;
+}
+/* colores */
+.titulos_carrito{
+    color: var(--colorCuartoMenosBlanco);
+}
+.descuento{
+    color: var(--ColorAmarillo);
+}
+/* Fondo para cards */
+.fondo_gris_carrito{
+    background-color: var(--seller) !important;
+    color: var(--ColorTerciario) !important;
+}
+.textosCarrito{
+    color:var(--ColorTerciario) !important;
+}
+/* ------------------- S1 producto ---------------------------- */
+.imagen_carrito{
+    max-width: 200px;
+}
+
+/* esta clase quita el estilo italica de los textos de las etiquetas i */
+.estilo_i{
+    font-style: normal;
+}
+.estilo_i:hover, .estilo_i:hover *{
+    color: var(--ColorAmarillo);
+    cursor: pointer;
+}
+/* boton cantidad */
+.cantidad:hover{
+    color: var(--ColorSecundario) !important;
+}
+/* ------------------- S2 resumen ---------------------------- */
+.input_carrito{
+    color: var(--ColorTerciario) !important;
+}
+/* BOton compra */
+.btn-light{
+    color: var(--seller) !important;
+    font-size: 14px;
+}
+/* clase para el placeholder */
+.codigo_descuento::placeholder {
+    color: var(--ColorTerciario);
+    opacity: 1;
+    font-size: 14px;
+}
+.codigo_descuento:focus::placeholder {
+    color: transparent; /* Hace el placeholder transparente al enfocar */
+}
+.codigo_descuento:focus {
+    outline: none !important; /* Elimina el borde azul */
+    box-shadow: none !important; /* Elimina el efecto de sombra */
+    border-color: var(--ColorTerciario) !important;
+}
+/* ------------------- FINALIZA CARRITO ---------------------------- */
