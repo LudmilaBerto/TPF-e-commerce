@@ -908,10 +908,16 @@
 .textosCarrito{
     color:var(--ColorTerciario) !important;
 }
-/* ------------------- S1 producto ---------------------------- */
+
+/* ------------------- S1 Descripcion ---------------------------- */
+
+
 .imagen_carrito{
-    max-width: 200px;
+    max-width: 175px;
+    align-self: start;
+    width: calc(100% - 200px);
 }
+
 
 /* esta clase quita el estilo italica de los textos de las etiquetas i */
 .estilo_i{

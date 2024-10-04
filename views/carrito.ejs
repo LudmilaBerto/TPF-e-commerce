@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <!-- Ruta para llegar aca -->
-            <div class="mb-2 d-flex fs-6 ">
+            <div class="mb-2 d-flex fs-6">
                 <a href="/" class="color-terciario my-3 text-decoration-none pe-1">Inicio / </a>
                 <a href="/tienda/" class="color-terciario my-3 text-decoration-none pe-1">Tienda / </a>
                 <a href="/tienda/" class="color-terciario my-3 text-decoration-none pe-1">Categoria / </a>
@@ -15,25 +15,22 @@
           <section class="col-md-8 ">
             
             <!-- DIV LISTA CARRITO-->
-            <div class="card mb-3 rounded-0 fondo_gris_carrito">
-              <div class="mt-4 justify-content-center">
-                <h6 class="  ms-4 fs-5 titulos_carrito fw-normal">CARRITO (10 ITEMS)</h6>
+            <div class="card mb-3 rounded-0  fondo_gris_carrito">
+              <div class="mt-3 justify-content-center">
+                <h6 class="  ms-4  fs-5 titulos_carrito fw-normal">CARRITO (10 ITEMS)</h6>
               </div>
               <!-- CARD -->
-              <div class="row g-0 ">
-                <!-- IMAGEN -->
-                <div class="col-md-4 col-sm-6 d-flex justify-content-center align-items-start">
-                    
-                    <div class="ratio ratio-1x1 mt-3 ms-3 imagen_carrito" >
+                <div class="card border-0  fondo_gris_carrito">
+                <div class="card-body d-flex flex-column flex-md-row align-items-stretch">
+                    <!-- IMAGEN -->
+                    <div class="ratio ratio-1x1 me-3 imagen_carrito mb-3 mb-md-0 align-self-center align-self-md-start imagen_carrito" >
                         <img src="https://images.pexels.com/photos/133919/pexels-photo-133919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="rounded-0 img-fluid" alt="Producto_Carrito">
                     </div>
-                </div>
-                <!-- TEXTO Y BOTONES -->
-                <div class="col-md-8 col-sm-6 d-flex flex-column">
-                    <div class="card-body me-4 d-flex flex-column justify-content-between ">
+            
+                    <div class="d-flex flex-column justify-content-between flex-grow-1" >
                         <!-- DESCRIPCION PRODUCTO -->
-                        <div class="d-flex justify-content-between align-items-start">
-                            <div class="pb-5 ">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <div class="pb-4">
                                 <h5 class="card-title fw-normal mb-2 titulos_carrito mt-0 pt-0">NOMBRE PRODUCTO</h5>
                                 <p class="my-0">filtro, atributos descripciones, color</p>
                                 <p class="my-0">item número: 1255</p>
@@ -45,106 +42,49 @@
                                     <span class="ms-1 pe-3 py-1">1</span>
                                     <i class="bi bi-chevron-down me-1 ps-3 ms-0 text-light"></i>
                                 </button>
-                                <ul class="dropdown-menu mx-0 px-0 fondo_gris_carrito ">
+                                <ul class="dropdown-menu mx-0 px-0 fondo_gris_carrito">
                                     <li><a class="dropdown-item fondo_gris_carrito cantidad ml-0 pl-0" href="#">2</a></li>
                                     <li><a class="dropdown-item fondo_gris_carrito cantidad ml-0 pl-0" href="#">3</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <!-- TEXTOS INFERIORES ELIMINAR, FAVORITOS Y PRECIOS -->
-                        <div class="d-flex justify-content-between align-items-center mt-2 ">
+            
+                        <!-- Parte Inferior -->
+                        <div class="d-flex justify-content-between align-items-center pt-0">
                             <div class="d-flex align-items-center">
                                 <div class="d-flex align-items-center pe-2 border-end estilo_i">
-                                    <i class="bi bi-trash "></i>
+                                    <i class="bi bi-trash"></i>
                                     <span class="ps-2">Eliminar</span>
                                 </div>
                                 <div class="d-flex align-items-center ps-2 border-0 fondo_gris_carrito favoritos estilo_i">
-                                    <i class="bi bi-heart  "></i>
+                                    <i class="bi bi-heart"></i>
                                     <span class="ps-2">Añadir a favoritos</span>
                                 </div>
                             </div>
-                            <div class=" ">
-                                <p class="text-decoration-line-through fw-light mb-0 text-end">$1668</p>
+                            <div class="d-flex flex-column align-items-end ms-auto">
+                                <p class="text-decoration-line-through fw-light mb-0">$1668</p>
                                 <p class="mb-4 fw-bolder titulos_carrito">$1668</p>
                             </div>
                         </div>
                     </div>
                 </div>
-              </div>
-
-              <!-- INICIO CARDS ADICIONALES -->
-              <hr class="mt-0 pt-0">
-              <!-- CARD -->
-              <div class="row g-0 ">
-                <!-- IMAGEN -->
-                <div class="col-md-4 col-sm-6 d-flex justify-content-center align-items-start">
-                    
-                    <div class="ratio ratio-1x1 mt-3 ms-3 imagen_carrito" >
-                        <img src="https://images.pexels.com/photos/133919/pexels-photo-133919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="rounded-0 img-fluid" alt="Producto_Carrito">
-                    </div>
                 </div>
-                <!-- TEXTO Y BOTONES -->
-                <div class="col-md-8 col-sm-6 d-flex flex-column">
-                    <div class="card-body me-4 d-flex flex-column justify-content-between ">
-                        <!-- DESCRIPCION PRODUCTO -->
-                        <div class="d-flex justify-content-between align-items-start mb-2">
-                            <div class="pb-5 ">
-                                <h5 class="card-title fw-normal mb-2 titulos_carrito mt-0 pt-0">NOMBRE PRODUCTO</h5>
-                                <p class="my-0">filtro, atributos descripciones, color</p>
-                                <p class="my-0">item número: 1255</p>
-                                <p class="my-0">color: gris lunar</p>
-                            </div>
-                            <!-- BOTON CANTIDAD -->
-                            <div class="btn-group">
-                                <button type="button" class="btn rounded-0 fondo_gris_carrito border d-flex align-items-center py-0" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span class="ms-1 pe-2 py-1">1</span>
-                                    <i class="bi bi-chevron-down me-1 ps-3 ms-0"></i>
-                                </button>
-                                <ul class="dropdown-menu fondo_gris_carrito">
-                                    <li><a class="dropdown-item fondo_gris_carrito" href="#">2</a></li>
-                                    <li><a class="dropdown-item fondo_gris_carrito" href="#">3</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- TEXTOS INFERIORES ELIMINAR, FAVORITOS Y PRECIOS -->
-                        <div class="d-flex justify-content-between align-items-center mt-2 ">
-                            <div class="d-flex align-items-center">
-                                <div class="d-flex align-items-center pe-2 border-end">
-                                    <i class="bi bi-trash estilo_i"></i>
-                                    <span class="ps-2">Eliminar</span>
-                                </div>
-                                <div class="d-flex align-items-center ps-2">
-                                    <i class="bi bi-heart estilo_i"></i>
-                                    <span class="ps-2">Añadir a favoritos</span>
-                                </div>
-                            </div>
-                            <div class=" ">
-                                <p class="text-decoration-line-through fw-light mb-0 text-end">$1668</p>
-                                <p class="mb-4 fw-bolder titulos_carrito">$1668</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </div>
 
+            <!-- INICIO CARDS ADICIONALES -->
+            <hr class="mt-0 pt-0">
             
-              <!-- CARDS ADICIONAL 2 -->
-              <hr class="mt-0 pt-0">
-              <!-- CARD -->
-              <div class="row g-0 ">
-                <!-- IMAGEN -->
-                <div class="col-md-4 col-sm-6 d-flex justify-content-center align-items-start">
-                    
-                    <div class="ratio ratio-1x1 mt-3 ms-3 imagen_carrito" >
+            <!-- carrito card 2 -->
+            <div class="card border-0  fondo_gris_carrito">
+                <div class="card-body d-flex flex-column flex-md-row align-items-stretch">
+                    <!-- IMAGEN -->
+                    <div class="ratio ratio-1x1 me-3 imagen_carrito mb-3 mb-md-0 align-self-center align-self-md-start imagen_carrito" >
                         <img src="https://images.pexels.com/photos/133919/pexels-photo-133919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="rounded-0 img-fluid" alt="Producto_Carrito">
                     </div>
-                </div>
-                <!-- TEXTO Y BOTONES -->
-                <div class="col-md-8 col-sm-6 d-flex flex-column">
-                    <div class="card-body me-4 d-flex flex-column justify-content-between ">
+            
+                    <div class="d-flex flex-column justify-content-between flex-grow-1" >
                         <!-- DESCRIPCION PRODUCTO -->
                         <div class="d-flex justify-content-between align-items-start mb-2">
-                            <div class="pb-5 ">
+                            <div class="pb-4">
                                 <h5 class="card-title fw-normal mb-2 titulos_carrito mt-0 pt-0">NOMBRE PRODUCTO</h5>
                                 <p class="my-0">filtro, atributos descripciones, color</p>
                                 <p class="my-0">item número: 1255</p>
@@ -153,35 +93,89 @@
                             <!-- BOTON CANTIDAD -->
                             <div class="btn-group">
                                 <button type="button" class="btn rounded-0 fondo_gris_carrito border d-flex align-items-center py-0" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span class="ms-1 pe-2 py-1">1</span>
-                                    <i class="bi bi-chevron-down me-1 ps-3 ms-0"></i>
+                                    <span class="ms-1 pe-3 py-1">1</span>
+                                    <i class="bi bi-chevron-down me-1 ps-3 ms-0 text-light"></i>
                                 </button>
-                                <ul class="dropdown-menu fondo_gris_carrito">
-                                    <li><a class="dropdown-item fondo_gris_carrito" href="#">2</a></li>
-                                    <li><a class="dropdown-item fondo_gris_carrito" href="#">3</a></li>
+                                <ul class="dropdown-menu mx-0 px-0 fondo_gris_carrito">
+                                    <li><a class="dropdown-item fondo_gris_carrito cantidad ml-0 pl-0" href="#">2</a></li>
+                                    <li><a class="dropdown-item fondo_gris_carrito cantidad ml-0 pl-0" href="#">3</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <!-- TEXTOS INFERIORES ELIMINAR, FAVORITOS Y PRECIOS -->
-                        <div class="d-flex justify-content-between align-items-center mt-2 ">
+            
+                        <!-- Parte Inferior -->
+                        <div class="d-flex justify-content-between align-items-center pt-0">
                             <div class="d-flex align-items-center">
-                                <div class="d-flex align-items-center pe-2 border-end">
-                                    <i class="bi bi-trash estilo_i"></i>
+                                <div class="d-flex align-items-center pe-2 border-end estilo_i">
+                                    <i class="bi bi-trash"></i>
                                     <span class="ps-2">Eliminar</span>
                                 </div>
-                                <div class="d-flex align-items-center ps-2">
-                                    <i class="bi bi-heart estilo_i"></i>
+                                <div class="d-flex align-items-center ps-2 border-0 fondo_gris_carrito favoritos estilo_i">
+                                    <i class="bi bi-heart"></i>
                                     <span class="ps-2">Añadir a favoritos</span>
                                 </div>
                             </div>
-                            <div class=" ">
-                                <p class="text-decoration-line-through fw-light mb-0 text-end">$1668</p>
+                            <div class="d-flex flex-column align-items-end ms-auto">
+                                <p class="text-decoration-line-through fw-light mb-0">$1668</p>
                                 <p class="mb-4 fw-bolder titulos_carrito">$1668</p>
                             </div>
                         </div>
                     </div>
                 </div>
-              </div>
+                </div>
+                <hr class="mt-0 pt-0">
+            <!-- card 3 -->
+            <div class="card border-0  fondo_gris_carrito">
+                <div class="card-body d-flex flex-column flex-md-row align-items-stretch">
+                    <!-- IMAGEN -->
+                    <div class="ratio ratio-1x1 me-3 imagen_carrito mb-3 mb-md-0 align-self-center align-self-md-start imagen_carrito" >
+                        <img src="https://images.pexels.com/photos/133919/pexels-photo-133919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="rounded-0 img-fluid" alt="Producto_Carrito">
+                    </div>
+            
+                    <div class="d-flex flex-column justify-content-between flex-grow-1" >
+                        <!-- DESCRIPCION PRODUCTO -->
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <div class="pb-4">
+                                <h5 class="card-title fw-normal mb-2 titulos_carrito mt-0 pt-0">NOMBRE PRODUCTO</h5>
+                                <p class="my-0">filtro, atributos descripciones, color</p>
+                                <p class="my-0">item número: 1255</p>
+                                <p class="my-0">color: gris lunar</p>
+                            </div>
+                            <!-- BOTON CANTIDAD -->
+                            <div class="btn-group">
+                                <button type="button" class="btn rounded-0 fondo_gris_carrito border d-flex align-items-center py-0" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="ms-1 pe-3 py-1">1</span>
+                                    <i class="bi bi-chevron-down me-1 ps-3 ms-0 text-light"></i>
+                                </button>
+                                <ul class="dropdown-menu mx-0 px-0 fondo_gris_carrito">
+                                    <li><a class="dropdown-item fondo_gris_carrito cantidad ml-0 pl-0" href="#">2</a></li>
+                                    <li><a class="dropdown-item fondo_gris_carrito cantidad ml-0 pl-0" href="#">3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+            
+                        <!-- Parte Inferior -->
+                        <div class="d-flex justify-content-between align-items-center pt-0">
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center pe-2 border-end estilo_i">
+                                    <i class="bi bi-trash"></i>
+                                    <span class="ps-2">Eliminar</span>
+                                </div>
+                                <div class="d-flex align-items-center ps-2 border-0 fondo_gris_carrito favoritos estilo_i">
+                                    <i class="bi bi-heart"></i>
+                                    <span class="ps-2">Añadir a favoritos</span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column align-items-end ms-auto">
+                                <p class="text-decoration-line-through fw-light mb-0">$1668</p>
+                                <p class="mb-4 fw-bolder titulos_carrito">$1668</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>    
+                
+            
             
               <!-- FIN CARDS ADICIONALES -->
             </div>
@@ -197,9 +191,9 @@
                 <!-- PRECIO TEXTOS Y VALORES -->
                 <div class="d-flex justify-content-between ">
                   <div>
-                    <p class="mb-1 textosCarrito">Costo Total</p>
-                    <p class="mb-1 textosCarrito">Envio</p>
-                    <p class="mb-1 textosCarrito">Descuento</p>
+                    <p class="mb-1 ">Costo Total</p>
+                    <p class="mb-1 ">Envio</p>
+                    <p class="mb-1 ">Descuento</p>
                     
                     
                   </div>
@@ -212,11 +206,11 @@
                 </div>
                 <hr class="py-0 my-0">
                 <div class="d-flex justify-content-between">
-                  <p class="pt-1 titulos_carrito fw-medium">Total (I.V.A. incluido)</p>
+                  <p class="pt-1 titulos_carrito fw-medium">Total con I.V.A.</p>
                   <p class="pt-1">$2130</p>
                 </div>
                 <!-- TEXTOS -->
-                <P class="textosCarrito">Añadir Código Promocional</P>
+                <P>Añadir Código Promocional</P>
                 <div class="input-group mb-3 fondo_gris_carrito px-0">
                     
                     <input type="text" class="form-control border-end-0 rounded-0 fondo_gris_carrito mx-0 codigo_descuento" placeholder="CÓDIGO" aria-label="Username" aria-describedby="basic-addon1">
@@ -237,5 +231,3 @@
     
 </main>
 <%- include('./partials/footer') %>
-
-

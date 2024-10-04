@@ -40,6 +40,17 @@ exports.getProducto=async(req,res,next)=>{
 		res.status(400).json({mensaje:`Ocurrió un error: ${error.message}`}) 
 	}
 }
+// 
+// 
+// 
+exports.getCarrito=(req,res,next)=>{
+	try{
+		res.render('carrito')
+	}
+    catch{
+		res.status(400).json({mensaje:`Ocurrió un error: ${error.message}`})
+	}
+}
 
 //@desc crear un producto
 //@route POST tienda/
