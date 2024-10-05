@@ -148,23 +148,23 @@
                     
                     <!-- CARDS -->
                     
-                    <div class="row pe-0">
+                    <div class="row pe-0 ">
                     <% productos.forEach(producto => { %>
                         
-                        <a href="#" class="text-decoration-none col-12 col-md-4">
-                        <div class="card border-0 ajustar-fondo">
-                            <div class="px-0 mx-0 pb-0 ratio ratio-4x3 img-top card-img-top ">
+                        <a href="/tienda/productos/<%= producto._id%>" class="text-decoration-none col-12 col-md-4 tarjetashoover tajetaFondo">
+                        <div class="card border-0 ajustar-fondo tajetaFondo">
+                            <div class="px-0 mx-0 pb-0 ratio ratio-4x3 img-top card-img-top">
                                 <img class="rounded-0 " alt="imagen card" src="<%= producto.imagenDestacada %>">
                             </div>
-                            <div class="card-body px-0 ">
-                                <h6 class="fw-normal text-start  pb-0 mb-0 color-titulo"><%= producto.nombre %></h6>
+                            <div class="card-body px-0 tajetaFondo">
+                                <h6 class="fw-normal text-start  pb-0 mb-0 color-titulo tarjetaTitulos"><%= producto.nombre %></h6>
                                 <!-- imagen colores -->
-                                <div class="mt-1 row mb-2 circulos-colores">
+                                <div class="mt-1 row mb-2 circulos-colores tajetaFondo">
                                     <% for (const [color, url] of producto.colores) { %>
                                         <img src="<%= url %>" alt="<%= color %>" class="pb-0 mb-0 tamano_circulos ">
                                     <% } %>
                                 </div>
-                                <h6 class="card-text text-start mb-3">$ <%= producto.precio %></h6>
+                                <h6 class="card-text text-start mb-3 tarjetaPrecio">$ <%= producto.precio %></h6>
                             </div>
                         </div>
                         </a>
@@ -173,8 +173,8 @@
                     </div>
                     
 
-                    <div class="d-flex justify-content-center my-3">
-                        <button class="btn btn-secondary border-0 px-3 rounded-0 shortby-boton-load-more btn_font" type="button" id="cargarMas" >CARGAR MÁS PRODUCTOS</button>
+                    <div class="d-flex justify-content-center my-3 ">
+                        <button class="btn btn-secondary border-0 px-3 rounded-0 shortby-boton-load-more btn_font cargar" type="button" id="cargarMas" >CARGAR MÁS PRODUCTOS</button>
                         
                     </div>
                 </section>

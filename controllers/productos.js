@@ -13,6 +13,7 @@ exports.getProductos=async(req,res,next)=>{
 
             return res.status(404).json({ mensaje: 'Productos no encontrado' });
         }
+		
 		res.render('catalogo',{productos})
 		
 

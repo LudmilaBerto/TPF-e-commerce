@@ -589,11 +589,18 @@
 
 /* SECCION 3 CARDS */
 
-
-/* Estilo para que todas las imagenes ocupen lo mismo */
-.card-img-top {
-    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin deformarse */
-    
+.tarjetashoover:hover{
+    border: 1px solid var(--ColorAmarillo);
+}
+.tarjetaTitulos:hover{
+    color: var(--ColorAmarillo);
+    font-size: 18px;
+}
+.tajetaFondo:hover{
+    background-color:var(--seller) ;
+}
+.tarjetaPrecio:hover{
+    font-size: 18px;
 }
 
 /* TOTAL RESULTADOS Y BUSQUEDA POR */
@@ -613,7 +620,10 @@
 .text-right {
     margin-left: auto;
 }
-
+/* boton cargar mas */
+.cargar:hover{
+    color: var(--ColorAmarillo);
+}
 
 /* ------------------- FINALIZA CATALOGO ---------------------------- */
 
