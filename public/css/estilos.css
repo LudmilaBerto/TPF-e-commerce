@@ -427,19 +427,29 @@
     font-family: var(--FontFamilyRoboto);
 
 }
-
+/* cambiar colores de texto*/
 .color-blanco{
     color: var(--ColorSecundario);
 }
+/* color para los elementos del desplegables */
+.color-terciario{
+    color: var(--ColorTerciario) !important;
+    
+}
+.color-titulo{
+    color: var(--colorCuartoMenosBlanco);
+}
+.liPrice{
+    background-color: var(--ColorPrincipal) !important;
+}
+/* clase para poner bien el color del fondo en despleables y cards*/
+.ajustar-fondo{
+    background-color: var(--ColorPrincipal ) !important;
+    color: var(--ColorSecundario) !important;
+}
 /* SECCION 1 imagen + inicio/tienda */
 
-/* estilo para la primera imagen */
-.img-fluid{
-    width: 100%;
-    height: 30vh; /* 30% del alto de la ventana */
-    object-fit: cover; /*mantener proporciones */
-}
-
+/* BOTON ORDEN DE CARGA */
 .shortby-boton-load-more{
     background-color: var(--seller) !important;
     cursor: pointer;
@@ -460,72 +470,145 @@
 /* SECCION 2 DESPLEGABLES */
 /* catalogo */
 
-/* quitar margen o padding izquierdo de los desplegables */
-.btn-sin-left{
-    padding-left: 0 !important;
-}
 /* espaciado entre span -- i*/
 .btn-custom {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-/* color para los elementos del desplegables */
-.color-terciario{
-    color: var(--ColorTerciario) !important;
+.btn_font{
+    font-size: 14px;
 }
 
-/* barra de precio */
-.slider {
-    width: 300px;
-    position: relative;
-    margin: 50px auto;
-}
-.slider-track {
-    height: 4px;
-    width: 100%;
-    background: #ddd;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.slider-thumb {
-    width: 20px;
-    height: 20px;
-    background: #007bff;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-}
-/* clase para click en partes del slide */
+/* ------------------- FILTROS ---------------------------- */
+/* ClASE PARA EL CONTENIDO DE LAS SLIDE*/
 .sub-lide:active{
-    background-color: var(--ColorAmarillo) !important;
+    background-color: var(--ColorPrincipal) !important;
 }
-.sub-lide:visisted{
+.sub-lide:hover{
+    background-color: var(--ColorPrincipal) !important;
+    color: var(--ColorSecundario) !important;
+}
+.sub-lide:visited{
     background-color: var(--ColorPrincipal) !important;
     color: var(--ColorSecundario);
     font-weight: bold;
 }
+/* PERSONALIZACION BARRA PRECIO */
+.barraPrecio {
+    position: relative;
+    width: 100%;
+    height: 25px;
+}
+.barraPrecio input[type="range"] {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+}
+.barraPrecio input[type="range"]::-webkit-slider-thumb {
+    pointer-events: all;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.barraPrecio input[type="range"]::-moz-range-thumb {
+    pointer-events: all;
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.barraPrecio input[type="range"]::-moz-range-thumb {
+    pointer-events: all;
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.barraPrecio p {
+    position: absolute;
+    top: 10px;
+    font-size: 14px;
+    transform: translateX(-50%);
+}
+/* por si queremos que el rango tenga un color distinto */
+.barraPrecio .barraRango {
+    position: absolute;
+    height: 5px;
+    background-color: transparent;
+    
+    transform: translateY(-50%);
+    z-index: 1;
+}
+/* CIRCULOS COLORES */
+/* Le doy un margin-bottom a los nombre de los colores */
+.circulos-coloresCatalogo{
+    margin-bottom: 25px;
+}
+
+/*circulos de colores con imagenes */
+
+
+.tamano_circulos{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    padding: 0 !important;
+    margin-left: 10px  !important;
+    margin-right: -5px !important;
+    margin-top: 4px !important;
+}
+
+.tamano_circulos:hover{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    border: 1px, solid, white;
+    padding: 0 !important;
+    margin-left: 10px  !important;
+    margin-right: -5px !important;
+    margin-top: 4px !important;
+}
+
+.sub-lide-colores:hover{
+    
+    border: 3px, solid, white;
+    border-radius:  50px;
+}
+
 /* SECCION 3 CARDS */
 
-/* Iconos mas pequeños */
-.icono-chico{
-    font-size: 10px;
+.tajetaFondo{
+    background-color: var(--ColorPrincipal);
 }
-/* Estilo para que todas las imagenes ocupen lo mismo */
-.card-img-top {
-    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin deformarse */
+.tajetaFondo:hover{
+    background-color:var(--seller) ;
 }
+.tarjetaTitulos:hover{
+    color: var(--ColorAmarillo);
+}
+
+
+
 
 /* TOTAL RESULTADOS Y BUSQUEDA POR */
 
 /* Clase para agregar subrayado */
 .subrayado{
     text-decoration: underline;
-    color: var(--ColorSecundario) !important;
+
 }
 
 /* letra totalmente a la izquirda */
@@ -536,13 +619,10 @@
 .text-right {
     margin-left: auto;
 }
-
-/* clase para poner bien el color del fondo en despleables y cards*/
-.ajustar-fondo{
-    background-color: var(--ColorPrincipal ) !important;
-    color: var(--ColorSecundario) !important;
+/* boton cargar mas */
+.cargar:hover{
+    color: var(--ColorAmarillo);
 }
-
 
 /* ------------------- FINALIZA CATALOGO ---------------------------- */
 
@@ -778,7 +858,7 @@
     aspect-ratio: 4/3; /* Relación de aspecto 4:3 (puedes ajustar según tus imágenes) */
     border-radius: 2px;
 }
-.card img{
+.imagenVistaReciente{
     width: 100%;
     height: 100%;
     object-fit: contain; 
@@ -812,3 +892,75 @@
   }
 
 /* ------------------- FINALIZA PRODUCTO ESPECIFICO ---------------------------- */
+/* ------------------- INICIA CARRITO ---------------------------- */
+
+
+.carrito{
+    background-color: var(--ColorPrincipal);
+    color: var(--ColorTerciario);
+    font-family: var(--FontFamilyRoboto);
+    font-size: 14px;
+    font-weight: 500;
+}
+/* colores */
+.titulos_carrito{
+    color: var(--colorCuartoMenosBlanco);
+}
+.descuento{
+    color: var(--ColorAmarillo);
+}
+/* Fondo para cards */
+.fondo_gris_carrito{
+    background-color: var(--seller) !important;
+    color: var(--ColorTerciario) !important;
+}
+.textosCarrito{
+    color:var(--ColorTerciario) !important;
+}
+
+/* ------------------- S1 Descripcion ---------------------------- */
+
+
+.imagen_carrito{
+    max-width: 175px;
+    align-self: start;
+    width: calc(100% - 200px);
+}
+
+
+/* esta clase quita el estilo italica de los textos de las etiquetas i */
+.estilo_i{
+    font-style: normal;
+}
+.estilo_i:hover, .estilo_i:hover *{
+    color: var(--ColorAmarillo);
+    cursor: pointer;
+}
+/* boton cantidad */
+.cantidad:hover{
+    color: var(--ColorSecundario) !important;
+}
+/* ------------------- S2 resumen ---------------------------- */
+.input_carrito{
+    color: var(--ColorTerciario) !important;
+}
+/* BOton compra */
+.btn-light{
+    color: var(--seller) !important;
+    font-size: 14px;
+}
+/* clase para el placeholder */
+.codigo_descuento::placeholder {
+    color: var(--ColorTerciario);
+    opacity: 1;
+    font-size: 14px;
+}
+.codigo_descuento:focus::placeholder {
+    color: transparent; /* Hace el placeholder transparente al enfocar */
+}
+.codigo_descuento:focus {
+    outline: none !important; /* Elimina el borde azul */
+    box-shadow: none !important; /* Elimina el efecto de sombra */
+    border-color: var(--ColorTerciario) !important;
+}
+/* ------------------- FINALIZA CARRITO ---------------------------- */

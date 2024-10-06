@@ -1,46 +1,40 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const thumbMin = document.getElementById('thumbMin');
-    const thumbMax = document.getElementById('thumbMax');
-    const priceRange = document.getElementById('priceRange');
-    const slider = document.querySelector('.slider');
-    const sliderWidth = slider.offsetWidth;
+const priceRangeMin = document.getElementById('priceRangeMin');
+const priceRangeMax = document.getElementById('priceRangeMax');
+const priceValueMin = document.getElementById('priceValueMin');
+const priceValueMax = document.getElementById('priceValueMax');
+const rangeBar = document.getElementById('rangeBar');
+const priceGap = 185000; // Define la diferencia mínima permitida
 
-    function updatePriceRange() {
-        const minPrice = Math.round((parseFloat(thumbMin.style.left) / sliderWidth) * 100);
-        const maxPrice = Math.round((parseFloat(thumbMax.style.left) / sliderWidth) * 100);
-        priceRange.textContent = `$${minPrice} - $${maxPrice}`;
+function updateValues() {
+  let minValue = parseInt(priceRangeMin.value);
+  let maxValue = parseInt(priceRangeMax.value);
+
+  // Asegúrate de que la diferencia mínima se mantenga
+  if (maxValue - minValue < priceGap) {
+    if (priceRangeMin === document.activeElement) {
+      minValue = maxValue - priceGap;
+      priceRangeMin.value = minValue;
+    } else if (priceRangeMax === document.activeElement) {
+      maxValue = minValue + priceGap;
+      priceRangeMax.value = maxValue;
     }
+  }
 
-    function onDrag(event, thumb) {
-        event.preventDefault();
-        const shiftX = event.clientX - thumb.getBoundingClientRect().left;
+  priceValueMin.textContent = `$${minValue}`;
+  priceValueMax.textContent = `$${maxValue}`;
+  const minPercent = (minValue / priceRangeMin.max) * 100;
+  const maxPercent = (maxValue / priceRangeMax.max) * 100;
 
-        function moveAt(pageX) {
-            let newLeft = pageX - shiftX - slider.getBoundingClientRect().left;
-            if (newLeft < 0) newLeft = 0;
-            if (newLeft > sliderWidth) newLeft = sliderWidth;
-            thumb.style.left = newLeft + 'px';
-            updatePriceRange();
-        }
+  priceValueMin.style.left = `calc(${minPercent}% - 10px)`;
+  priceValueMax.style.left = `calc(${maxPercent}% - 10px)`;
 
-        function onMouseMove(event) {
-            moveAt(event.clientX);
-        }
+  // Actualiza la posición y el tamaño de la barra de color
+  rangeBar.style.left = `${minPercent}%`;
+  rangeBar.style.width = `${maxPercent - minPercent}%`;
+}
 
-        document.addEventListener('mousemove', onMouseMove);
+priceRangeMin.addEventListener('input', updateValues);
+priceRangeMax.addEventListener('input', updateValues);
 
-        document.addEventListener('mouseup', function() {
-            document.removeEventListener('mousemove', onMouseMove);
-        }, { once: true });
-    }
-
-    thumbMin.addEventListener('mousedown', function(event) {
-        onDrag(event, thumbMin);
-    });
-
-    thumbMax.addEventListener('mousedown', function(event) {
-        onDrag(event, thumbMax);
-    });
-
-    updatePriceRange();
-});
+// Inicializar los valores
+updateValues();
