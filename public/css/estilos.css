@@ -434,6 +434,7 @@
 /* color para los elementos del desplegables */
 .color-terciario{
     color: var(--ColorTerciario) !important;
+    
 }
 .color-titulo{
     color: var(--colorCuartoMenosBlanco);
@@ -589,26 +590,24 @@
 
 /* SECCION 3 CARDS */
 
-.tarjetashoover:hover{
-    border: 1px solid var(--ColorAmarillo);
-}
-.tarjetaTitulos:hover{
-    color: var(--ColorAmarillo);
-    font-size: 18px;
+.tajetaFondo{
+    background-color: var(--ColorPrincipal);
 }
 .tajetaFondo:hover{
     background-color:var(--seller) ;
 }
-.tarjetaPrecio:hover{
-    font-size: 18px;
+.tarjetaTitulos:hover{
+    color: var(--ColorAmarillo);
 }
+
+
+
 
 /* TOTAL RESULTADOS Y BUSQUEDA POR */
 
 /* Clase para agregar subrayado */
 .subrayado{
     text-decoration: underline;
-    color: var(--ColorTerciario) !important;
 
 }
 

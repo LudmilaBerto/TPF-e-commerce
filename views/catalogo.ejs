@@ -18,7 +18,7 @@
             <div class="row">
                                 <!-- Filtros -->
                                 <section class="col-12 col-md-4 fw-semibold fs-5">
-                                    <div class=" my-3 color-blanco">
+                                    <div class=" my-4 color-blanco">
                                         CATEGORIAS
                                     </div>
                                     <div class="navbar-nav d-flex flex-column">
@@ -130,11 +130,11 @@
                 
                 <!-- Arriba de cards-->
                 <section class="col-12 col-md-8">
-                    <div class="d-flex justify-content-between my-3">
-                        <p class=" color-terciario subrayado">MOSTRANDO 1-12 DE .. RESULTADOS</p>
+                    <div class="d-flex justify-content-between mt-3 mb-2 ps-0 ms-0">
+                        <p class="color-blanco subrayado pt-3 ps-0 ms-0">MOSTRANDO 1-12 DE .. RESULTADOS</p>
                         <!-- Desplegable filtro de busqueda -->
                         <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle  rounded-0 border-0 shortby-boton-load-more btn_font" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn btn-secondary dropdown-toggle  rounded-0 border-0 shortby-boton-load-more btn_font mt-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Búsqueda por defecto
                             </button>
                             <ul class="dropdown-menu shortby">
@@ -151,23 +151,25 @@
                     <div class="row pe-0 ">
                     <% productos.forEach(producto => { %>
                         
-                        <a href="/tienda/productos/<%= producto._id%>" class="text-decoration-none col-12 col-md-4 tarjetashoover tajetaFondo">
-                        <div class="card border-0 ajustar-fondo tajetaFondo">
+                        
+                        <div class=" col-12 col-md-4 card border-0 tajetaFondo px-2 pt-2">
+                            <a href="/tienda/productos/<%= producto._id%>" class="text-decoration-none">
                             <div class="px-0 mx-0 pb-0 ratio ratio-4x3 img-top card-img-top">
                                 <img class="rounded-0 " alt="imagen card" src="<%= producto.imagenDestacada %>">
                             </div>
-                            <div class="card-body px-0 tajetaFondo">
-                                <h6 class="fw-normal text-start  pb-0 mb-0 color-titulo tarjetaTitulos"><%= producto.nombre %></h6>
+                            <div class="card-body px-0 ">
+                                <h6 class="fw-normal text-start pb-0 mb-0 color-titulo tarjetaTitulos"><%= producto.nombre %></h6>
                                 <!-- imagen colores -->
-                                <div class="mt-1 row mb-2 circulos-colores tajetaFondo">
+                                <div class="mt-1 row mb-2 circulos-colores ">
                                     <% for (const [color, url] of producto.colores) { %>
                                         <img src="<%= url %>" alt="<%= color %>" class="pb-0 mb-0 tamano_circulos ">
                                     <% } %>
                                 </div>
-                                <h6 class="card-text text-start mb-3 tarjetaPrecio">$ <%= producto.precio %></h6>
+                                <h6 class="card-text text-start mb-3 color-blanco">$ <%= producto.precio %></h6>
                             </div>
+                            </a>
                         </div>
-                        </a>
+                        
                         <% }) %>
                 
                     </div>
