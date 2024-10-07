@@ -214,12 +214,21 @@
                 <div class="col-12 col-md-6 descripcionDescuento">
                     <h4>SUSCRÍBETE Y OBTÉN UN 10% DE DESCUENTO</h4>
                     <p  class="lh-sm pt-2">Suscríbete a nuestra newsletter para estar al día de las últimas novedades, promociones y ofertas de House LAB. Sé el primero en recibir notificaciones sobre nuestras nuevas colecciones de muebles y accesorios para el hogar, así como...</p>
-                    <ul class="list-unstyled lh-1 pt-4 ul-descripcion-sofa">
-                        <li class="mb-2">Introduce tu nombre</li>
-                        <hr class="mt-2">
-                        <li class="mb-2">Introduce tu e-mai</li>
-                        <hr class="mt-2">
-                    </ul>
+                    <form class="ul-descripcion-sofa">
+                        <div class="mb-0">
+                            <input type="text" id="name" name="name" required placeholder="Introduce tu nombre" class="form-input pb-1"/>
+                            <hr class="mt-0 mb-2">
+                        </div>
+                        
+                        <div class="mb-0">
+                            <input type="email" id="email" name="email" required placeholder="Introduce tu e-mail" class="form-input pt-0 pb-1"/>
+                            <hr class="mt-0">
+                        </div>
+
+                        <button type="submit" class="btn mt-3 boton-subscripcion">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                    </form>
         
                 </div>
             </div>

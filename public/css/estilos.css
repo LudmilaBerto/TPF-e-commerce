@@ -287,8 +287,35 @@
     font-weight: 300;
 }
 
+.form-label {
+    color: white; /* Color del texto de la etiqueta */
+}
 
+.form-input {
+    border: none;
+    background-color: var(--ColorPrincipal); /* Color de fondo */
+    color: white; /* Color del texto en el input */
+    width: 100%;
+    padding: 10px;
+    outline: none; /* Quitar el enfoque visual */
+}
 
+.form-input::placeholder {
+    color: white; /* Color del placeholder */
+    opacity: 1; /* Opacidad opcional */
+}
+
+.boton-subscripcion{
+    font-size: 35px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+}
+.boton-subscripcion:hover{
+    color: var(--ColorAmarillo);
+    border: 2px solid var(--ColorAmarillo);
+    font-size: 35px !important;
+}
 
 
 /* ------------------- FINALIZA SECCION CINCO PAGINA INICIO ---------------------------- */
