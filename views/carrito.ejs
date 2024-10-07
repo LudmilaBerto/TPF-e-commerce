@@ -1,27 +1,31 @@
 <%- include('./partials/header') %>
-<main class="carrito">
+<main class="carrito mt-2">
 
     <div class="container">
         <div class="row">
             <!-- Ruta para llegar aca -->
-            <div class="mb-2 d-flex fs-6">
-                <a href="/" class="color-terciario my-3 text-decoration-none pe-1">Inicio / </a>
-                <a href="/tienda/" class="color-terciario my-3 text-decoration-none pe-1">Tienda / </a>
-                <a href="/tienda/" class="color-terciario my-3 text-decoration-none pe-1">Categoria / </a>
-                <a href="/tienda/" class="color-terciario my-3 text-decoration-none pe-1">Subcategoria /</a>
-                <a href="/tienda/carrito/" class="color-terciario my-3 text-decoration-none pe-1">Carrito /</a>
+            <div class="mb-3 d-flex fs-6">
+                <a href="/" class="rutaActual">Inicio</a>
+                <span class="rutaActual mx-1">/</span>
+                <a href="/tienda/" class="rutaActual">Tienda</a>
+                <span class="rutaActual mx-1">/</span>
+                <a href="/tienda/" class="rutaActual">Categoria</a>
+                <span class="rutaActual mx-1">/</span>
+                <a href="/tienda/" class="rutaActual">Subcategoria</a>
+                <span class="rutaActual mx-1">/</span>
+                <a href="/tienda/carrito/" class="rutaActual">Carrito</a>
             </div>
           <!-- SECTION 1 PRODUCTOS SELECCIONADOS -->
           <section class="col-md-8 ">
             
             <!-- DIV LISTA CARRITO-->
             <div class="card mb-3 rounded-0  fondo_gris_carrito">
-              <div class="mt-3 justify-content-center">
-                <h6 class="  ms-4  fs-5 titulos_carrito fw-normal">CARRITO (10 ITEMS)</h6>
-              </div>
-              <!-- CARD -->
+                <div class="mt-3 justify-content-center">
+                    <h6 class="  ms-4  fs-5 titulos_carrito fw-normal">CARRITO (10 ARTICULOS)</h6>
+                </div>
+                <!-- CARD -->
                 <div class="card border-0  fondo_gris_carrito">
-                <div class="card-body d-flex flex-column flex-md-row align-items-stretch">
+                <div class="card-body d-flex flex-column flex-md-row align-items-stretch px-0">
                     <!-- IMAGEN -->
                     <div class="ratio ratio-1x1 me-3 imagen_carrito mb-3 mb-md-0 align-self-center align-self-md-start imagen_carrito" >
                         <img src="https://images.pexels.com/photos/133919/pexels-photo-133919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="rounded-0 img-fluid" alt="Producto_Carrito">
@@ -68,7 +72,7 @@
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
 
             <!-- INICIO CARDS ADICIONALES -->
             <hr class="mt-0 pt-0">

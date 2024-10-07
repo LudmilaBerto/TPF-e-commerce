@@ -940,6 +940,7 @@
 .fondo_gris_carrito{
     background-color: var(--seller) !important;
     color: var(--ColorTerciario) !important;
+    padding: 10px 25px;
 }
 .textosCarrito{
     color:var(--ColorTerciario) !important;
