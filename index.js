@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const dotenv = require('dotenv');
 const morgan = require('morgan');
+colors = require('colors'); //Le da colores a los console.log
 const productos = require('./routers/productos');
 const connectDB = require('./config/db');
 
@@ -44,5 +45,5 @@ app.use((req, res, next) => {
 
 // Configuración del servidor
 app.listen(PORT, () => {
-    console.log(`El servidor está corriendo en http://localhost:${PORT}/`);
+    console.log(`El servidor está corriendo en http://localhost:${PORT}/`.yellow.bold.underline);
 });
