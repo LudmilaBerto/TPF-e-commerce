@@ -919,6 +919,7 @@
   }
 
 /* ------------------- FINALIZA PRODUCTO ESPECIFICO ---------------------------- */
+
 /* ------------------- INICIA CARRITO ---------------------------- */
 
 
@@ -940,7 +941,13 @@
 .fondo_gris_carrito{
     background-color: var(--seller) !important;
     color: var(--ColorTerciario) !important;
-    padding: 10px 25px;
+    padding: 5px 25px;
+}
+/* Boton cantidad */
+.boton-cantidad{
+    background-color: var(--seller) !important;
+    color: var(--ColorTerciario) !important;
+    
 }
 .textosCarrito{
     color:var(--ColorTerciario) !important;
@@ -959,10 +966,19 @@
 /* esta clase quita el estilo italica de los textos de las etiquetas i */
 .estilo_i{
     font-style: normal;
+    font-size: 13px;
 }
 .estilo_i:hover, .estilo_i:hover *{
     color: var(--ColorAmarillo);
     cursor: pointer;
+}
+.divisor-fav-elim-carrito{
+    border: none;
+    border-left: 1px solid var(--ColorTerciario); /* Grosor y color de la línea */
+    height: 12px;                 /* Altura de la línea */
+    width: 0;                    /* Ancho de la línea (se usa como vertical) */
+    margin: 0; 
+    margin: 0px 4px;
 }
 /* boton cantidad */
 .cantidad:hover{
@@ -977,6 +993,9 @@
     color: var(--seller) !important;
     font-size: 14px;
 }
+.codigo_descuento{
+    text-transform: uppercase;
+}
 /* clase para el placeholder */
 .codigo_descuento::placeholder {
     color: var(--ColorTerciario);
@@ -990,5 +1009,10 @@
     outline: none !important; /* Elimina el borde azul */
     box-shadow: none !important; /* Elimina el efecto de sombra */
     border-color: var(--ColorTerciario) !important;
+}
+.letra-gris-carrito{
+    color: var(--ColorTerciario);
+    font-weight: 400;
+    font-size: 13px;
 }
 /* ------------------- FINALIZA CARRITO ---------------------------- */
