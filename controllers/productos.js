@@ -30,7 +30,6 @@ exports.getProductos=async(req,res,next)=>{
 // http://localhost:4500/tienda/productos/:id
 exports.getProducto=async(req,res,next)=>{
 	try{
-			//id producto: 66e65eec8d9f30ce4b208341
 		const producto = await Productos.findById(req.params.id)
 		if (!producto) {
             return res.status(404).json({ mensaje: 'Producto no encontrado' });
@@ -97,6 +96,14 @@ exports.putProducto=async(req,res,next)=>{
 
 // http://localhost:4500/tienda/productos/:id
 
-exports.deleteProducto=(req,res,next)=>{
-	res.status(202).json({resultado:true, mensaje:'Eliminar un solo Producto, el Producto: ${req.params.id}'})
+exports.deleteProducto=async(req,res,next)=>{
+    try {
+        await Productos.findByIdAndDelete(req.params.id);
+        res.status(202).json({
+            resultado: true, 
+            mensaje: `El producto con ID: ${req.params.id} ha sido eliminado`
+        });
+    } catch (error) {
+        res.status(400).json({ mensaje: `Ocurrió un error: ${error.message}` });
+    }
 }
