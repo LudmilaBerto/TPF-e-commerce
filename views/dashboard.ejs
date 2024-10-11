@@ -1,0 +1,52 @@
+<%- include('./partials/header') %>
+
+    <main class="vh-100 mainPanelControl">
+
+      <div class="container pt-5 mainPanelControl">
+
+        <h1 class="text-light">Bienvenido, <%= usuario.name %>!</h1>
+        <p class="text-light">Este es tu panel de control donde puedes gestionar tu perfil y ver más detalles.</p>
+      
+        <div class="row">
+          <!-- Información de Perfil -->
+          <div class="col-md-4">
+            <div class="card text-white mb-4 shadow-sm tarjetaPanel">
+              <div class="card-body">
+                <h5 class="card-title text-light">Información de Perfil</h5>
+                <p class="card-text mb-1"><span class="fw-bold">Usuario: </span><%= usuario.name %></p>
+                <p class="card-text mb-1"><span class="fw-bold">Tu rol:</span> <%= usuario.role %></p>
+                <p class="card-text mb-1"><span class="fw-bold">Email: </span><%= usuario.email %></p>
+                <a href="#" class="btn btn-outline-light mt-2">Editar Perfil</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Historial de Compras -->
+          <div class="col-md-4">
+            <div class="card text-white mb-4 shadow-sm tarjetaPanel">
+              <div class="card-body">
+                <h5 class="card-title text-light">Historial de Compras</h5>
+                <p class="card-text">Consulta tus compras recientes.</p>
+                <a href="#" class="btn btn-outline-light">Ver Historial</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Soporte -->
+          <div class="col-md-4">
+            <div class="card text-white mb-4 shadow-sm tarjetaPanel">
+              <div class="card-body">
+                <h5 class="card-title text-light">Soporte</h5>
+                <p class="card-text">¿Necesitas ayuda? Contacta con el soporte.</p>
+                <a href="#" class="btn btn-outline-light">Contactar Soporte</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+        
+    </main>
+      
+    <%- include('./partials/footer') %>
+

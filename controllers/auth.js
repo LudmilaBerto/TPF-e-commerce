@@ -84,10 +84,6 @@ exports.postLogin=async(req,res,next)=>{
         // Descencriptar la contraseña guardada en BD para compararla con la que ingresó el usuario
         //  Verificar las contraseñas
         
-        
-        //ANALIZAR CODIGO!! 
-        // El error que pasaba en la clase(1:58:00) es que el coloco Usuario(varible que contiene al modelo) y, en su lugar iba la variable user(variable que contiene el metodo que busca el usuario por email, trae y selecciona en password)
-        
           const sonIguales=await usuario.matchPassword(password);
 
           if(!sonIguales){

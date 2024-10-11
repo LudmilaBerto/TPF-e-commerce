@@ -41,9 +41,8 @@ usuariosSchema.pre('save', async function(next){
         next(); // Si la contraseña no ha sido modificada, pasa al siguiente middleware
     }
 
-    const salt=await bcrypt.genSalt(10) //aqui van las vueltas que va a dar el encriptado
+    const salt=await bcrypt.genSalt(10)
     this.password=await bcrypt.hash(this.password, salt)
-    //linea 39/40 es lo mismo que hacer esto => password= await bcrypt.hash(password,10)
 })
 
 // Método para generar un JWT para el usuario
