@@ -1,0 +1,76 @@
+<%- include('./partials/header') %>
+<!-- aun falta la vinculacion con mongoose -->
+<main class="preguntas">
+<section class="container">
+    <!-- Preguntas -->
+    <div class="col-12  fw-semibold fs-5">
+                        <!-- PREGUNTAS FRECUENTES -->
+                        <div class=" my-4 color-blanco">
+                            PREGUNTAS FRECUENTES
+                        </div>
+                        <div class="navbar-nav d-flex flex-column">
+                            <!-- CÓMO RETIRAR -->
+                            <li class="nav-item dropdown">
+                                        <button class="pl-0 border-0 btn btn-custom btn-dark w-100 d-flex justify-content-between align-items-center border-bottom rounded-0 px-0 ajustarFondoSlides" data-bs-toggle="collapse" data-bs-target="#habitacionDropdown" aria-expanded="false" aria-controls="habitacionDropdown">
+                                            <span>¿CÓMO RETIRAR EN TIENDA?</span>
+                                            <i class="bi bi-dash ml-auto "></i>
+                                        </button>                            
+                                        <ul class="border-0 dropdown-menu dropdown-menu-dark collapse ajustarFondoSlides" id="habitacionDropdown">
+                                            <li class="dropdown-item text-wrap px-0 subSlideGenerico">
+                                                Si seleccionaste Retiro en Tienda, encontrarás un selector para ingresar tu código Postal y ver las tiendas disponibles. Hacé click en el botón "Buscar" para ver el listado de tiendas dentro de esa región.
+                                            </li>
+                                            <li class="dropdown-item text-wrap px-0 subSlideGenerico">
+                                                ¿Qué debo llevar para retirar mi pedido?
+                                            </li>
+                                            <li class="dropdown-item text-wrap px-0 subSlideGenerico">
+                                                Solo el TITULAR DE LA TARJETA con la que se pagó puede retirar la compra. Deberá presentar el número de pedido, el DNI y la tarjeta con la que compró.
+                                            </li>
+                                            <li class="dropdown-item text-wrap px-0 subSlideGenerico">
+                                                
+                                            </li>
+                                        </ul>
+                            </li>
+                            <!-- ENTREGAS -->
+                            <li class="nav-item dropdown mt-2">
+                                        <button class="ajustarFondoSlides border-0 btn btn-dark w-100 d-flex justify-content-between align-items-center border-bottom rounded-0 btn-custom px-0" data-bs-toggle="collapse" data-bs-target="#mueblesDropdown" aria-expanded="false" aria-controls="mueblesDropdown">
+                                            <span>ENTREGAS</span>
+                                            <i class="bi bi-dash ml-auto"></i>
+                                        </button>
+                                        <ul class="ajustarFondoSlides border-0 dropdown-menu dropdown-menu-dark collapse" id="mueblesDropdown">
+                                            <li class="dropdown-item  px-0 subSlideGenerico">Podrás conocer el estado de tu compra llamando al 0810-999-3728 de lunes a viernes de 10 a 16 h.</li>
+                                            <li class="dropdown-item  px-0 subSlideGenerico">También podes revisar el estado de tu compra con el código de seguimiento.</li>
+                                        </ul>
+                            </li>
+                            <!-- ¿CÓMO PAGAR? -->
+                            <li class="nav-item dropdown mt-2">
+                                        <button class="border-0 btn btn-dark w-100 d-flex justify-content-between align-items-center border-bottom rounded-0 px-0 ajustarFondoSlides btn-custom" data-bs-toggle="collapse" data-bs-target="#colorMueblesDropdown" aria-expanded="false" aria-controls="colorMueblesDropdown">
+                                            <span>¿CÓMO PAGAR?</span>
+                                            <i class="bi bi-dash ml-auto"></i>
+                                        </button>
+                                        <ul class=" border-0 dropdown-menu dropdown-menu-dark collapse ajustarFondoSlides" id="colorMueblesDropdown">
+                                            <li class="dropdown-item text-wrap px-0 subSlideGenerico">
+                                                Podrás abonar tu Solicitud  con tarjeta de crédito. Consultá las promociones de medios de pago vigentes haciendo click aquí 
+
+                                                Seleccioná el medio de pago deseado y completá todos los datos requeridos. Hacé click en "Continuar" para finalizar la Solicitud  (este proceso puede demorar algunos instantes).
+
+                                                En la pantalla de confirmación de pedido verás todo el detalle de tu orden. Recibirás esta misma información por email
+                                            </li>
+                                        </ul>
+                            </li>
+                            <!-- Devoluciones -->
+                            <li class="nav-item dropdown mt-2">
+                                        <button class=" border-0 btn btn-dark w-100 d-flex justify-content-between align-items-center border-bottom rounded-0 px-0 btn-custom ajustarFondoSlides" data-bs-toggle="collapse" data-bs-target="#tipoSofaDropdown" aria-expanded="false" aria-controls="tipoSofaDropdown">
+                                            <span>¿QUÉ REQUISITOS DEBE CUMPLIR UN PRODUCTO PARA PODER CAMBIARLO O DEVOLVERLO?</span>
+                                            <i class="bi bi-dash ml-auto"></i>
+                                        </button>
+                                        <ul class="border-0 dropdown-menu dropdown-menu-dark collapse ajustarFondoSlides" id="tipoSofaDropdown">
+                                            <li><a class="dropdown-item px-0 btn-sin-left color-terciario subSlideGenerico " href="#">Podrás cambiar o devolver la mayoría de los productos si estos estan con todo el equipamento entregado.</a></li>
+                                            
+                                        </ul>
+                            </li>
+                        </div>
+    </div>
+</section>
+</main>
+
+<%- include('./partials/footer') %>

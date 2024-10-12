@@ -1085,4 +1085,58 @@
 }
 
 /* ------------------- FINALIZA AUTH ---------------------------- */
+/* ------------------- INICIA CONTACTO ---------------------------- */
+.fondoContacto{
+    background-color: var(--ColorPrincipal) !important;
+    color: var(--ColorTerciario) !important;
+}
+.textosContacto{
+    color: var(--ColorTerciario);
+}
+.fondoCardsContacto{
+    background-color: var(--seller) !important;
+    
+}
+.tamañoContacto{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+/* formulario de contacto */
+.inputContacto{
+    background-color: #414040 !important;
+    color: #ffffff !important;
+    border:1px solid #F4F4F4 !important;
+}
+
+.inputContacto:focus {
+        outline: none;
+        box-shadow: none;
+    
+}
+.inputContacto::placeholder{
+    color: var(--ColorTerciario) !important;
+}
+/* ------------------- FINALIZA CONTACTO ---------------------------- */
+/* ------------------- INICIA SLIDES PREGUNTAS Y ENTREGAS ---------------------------- */
+/* AJUSTAR FONDO SLIDES*/
+.ajustarFondoSlides{
+    background-color: var(--ColorPrincipal ) !important;
+    color: var(--ColorSecundario) !important;
+}
+/* ClASE PARA EL CONTENIDO DE LAS SLIDE*/
+.subSlideGenerico:active{
+    background-color: var(--ColorPrincipal) !important;
+}
+.subSlideGenerico:hover{
+    background-color: var(--ColorPrincipal) !important;
+    color: var(--ColorSecundario) !important;
+}
+.subSlideGenerico:visited{
+    background-color: var(--ColorPrincipal) !important;
+    color: var(--ColorSecundario);
+    font-weight: bold;
+}
+
+/* ------------------- FINALIZA SLIDES PREGUNTAS Y ENTREGAS ---------------------------- */
 
