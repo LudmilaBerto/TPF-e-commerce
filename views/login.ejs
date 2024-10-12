@@ -1,0 +1,48 @@
+<%- include('./partials/header') %>
+
+
+<main class="d-flex align-items-center justify-content-center vh-100 mainLogin">
+
+    <!-- Formulario de inicio de sesión -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-6 col-sm-8">
+                <div class="shadow-lg tarjeta">
+                    <div class="card-body p-4">
+                        <h3 class="card-title text-center mb-4 tituloAuth">Iniciar sesión</h3>
+
+                        <form action="/auth/login" method="post">
+
+                            <!-- Campo de correo electrónico -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label label-auth">Correo electrónico</label>
+                                <input type="email" class="form-control input-auth" id="email" name="email" required placeholder="Ingresa tu correo electrónico">
+                            </div>
+
+                            <!-- Campo de contraseña -->
+                            <div class="mb-3">
+                                <label for="password" class="form-label label-auth">Contraseña</label>
+                                <input type="password" class="form-control input-auth" id="password" name="password" required placeholder="Ingresa tu contraseña">
+                            </div>
+
+                            <!-- Botón de envío -->
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-light mt-3">INICIAR SESIÓN</button>
+                            </div>
+
+                            
+                        </form>
+                        <!-- Enlace para registrarse -->
+                        <div class="text-center mt-3">
+                            <p class="">¿No tienes una cuenta? <a href="/auth/register" class="linkAuth">Regístrate aquí</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<%- include('./partials/footer') %>
+

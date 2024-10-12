@@ -775,7 +775,7 @@
 /* BOTON de agregar al carrito */
 .botonAddCarrito{
     font-family: var(--FontFamilyRoboto);
-    font-weight: 500;
+    font-weight: 400;
     font-size: 13px;
     background-color: var(--ColorSecundario);
     border-radius: 2px !important;
@@ -1016,3 +1016,73 @@
     font-size: 13px;
 }
 /* ------------------- FINALIZA CARRITO ---------------------------- */
+
+
+/* ------------------- COMIENZA AUTH---------------------------- */
+ /* REGISTRO */
+
+ .mainRegistro{
+    background-color: var(--ColorPrincipal);
+    color: var(--ColorSecundario);
+    padding: 80px 0px;
+    font-family: var(--FontFamilyRoboto);
+}
+.tituloAuth{
+    font-size: 30px;
+}
+.label-auth{
+    font-size:15px;
+}
+
+/* Input del formulario de registro/login */
+.input-auth{
+    background-color: #414040 !important;
+    color: #ffffff !important;
+    border:1px solid #F4F4F4 !important;
+}
+
+/* tarjeta contenedora de login/register */
+.tarjeta{
+    background-color: #414040; /* Fondo gris claro para la tarjeta */
+    border: none;
+    border-radius: 4px;
+}
+
+.input-auth:focus {
+        outline: none;
+        box-shadow: none;
+    
+}
+.input-auth::placeholder{
+    color: var(--ColorTerciario) !important;
+}
+.opcionRol{
+    color: var(--ColorTerciario) !important;
+}
+
+/* link de paginas Auth */
+.linkAuth {
+    color: #F4F4F4; /* Enlaces en color claro */
+}
+
+.linkAuth:hover {
+    color: var(--ColorAmarillo); /* Enlaces en naranja al hacer hover */
+}
+/*-------------------- LOGIN ------------------------------*/
+.mainLogin{
+    background-color: var(--ColorPrincipal);
+    color: var(--ColorSecundario);
+    font-family: var(--FontFamilyRoboto);
+}
+/* --------------PANEL DE CONTROL -------------------- */
+.mainPanelControl{
+    background-color: var(--ColorPrincipal) !important;
+    font-family: var(--FontFamilyRoboto);
+}
+
+.tarjetaPanel{
+    background-color: #414040;
+}
+
+/* ------------------- FINALIZA AUTH ---------------------------- */
+

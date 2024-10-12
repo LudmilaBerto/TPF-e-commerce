@@ -2,8 +2,10 @@ const express = require('express');
 const app = express();
 const dotenv = require('dotenv');
 const morgan = require('morgan');
+const cookieParser=require('cookie-parser')
 colors = require('colors'); //Le da colores a los console.log
 const productos = require('./routers/productos');
+const auth=require('./routers/auth')
 const connectDB = require('./config/db');
 
 // Configuración de dotenv
@@ -20,10 +22,12 @@ app.set('view engine', 'ejs');
 
 // Archivos estáticos
 app.use(express.static('public'));
-
+// Middleware para analizar el cuerpo de la solicitud
+app.use(express.urlencoded({ extended: true })); // Para datos del formulario
 // Middleware para procesar JSON
 app.use(express.json());
-
+//cookie parser
+app.use(cookieParser());
 // Middleware para registro de solicitudes HTTP
 app.use(morgan('dev'));
 
@@ -37,6 +41,7 @@ app.get('/', (req, res) => {
 
 // Rutas dinámicas para productos
 app.use('/tienda', productos);
+app.use('/auth', auth)
 
 // Manejo de errores 404 (Debe ir después de todas las rutas)
 app.use((req, res, next) => {

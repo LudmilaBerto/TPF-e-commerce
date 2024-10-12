@@ -1,0 +1,65 @@
+<%- include('./partials/header') %>
+
+<main class="d-flex align-items-center justify-content-center mainRegistro">
+
+
+    <div class="container ">
+        <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-6 col-sm-8">
+                <div class="shadow-lg tarjeta">
+                    <div class="card-body p-4">
+                        <h2 class="text-center tituloAuth">Crear una cuenta</h2>
+                        <form action="/auth/register" method="post" class="mt-4">
+                            <!-- Campo de nombre -->
+                            <div class="mb-3">
+                                <label for="name" class="form-label mb-1 label-auth">Nombre de usuario</label>
+                                <input type="text" class="form-control input-auth" id="name" name="name" placeholder="Ingrese su nombre" required>
+                            </div>
+                            <!-- Campo de email -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label mb-1 label-auth">Correo electrónico</label>
+                                <input type="email" class="form-control input-auth" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
+                            </div>
+                            <!-- Campo de contraseña -->
+                            <div class="mb-3">
+                                <label for="password" class="form-label mb-1 label-auth">Contraseña</label>
+                                <input type="password" class="form-control input-auth" id="password" name="password" placeholder="Ingresar una contraseña" required>
+                            </div>
+                             <!-- Campo para seleccionar rol -->
+                            <div class="mb-3">
+                                <label for="role" class="form-label mb-1 label-auth">Rol</label>
+                                <select class="form-select input-auth opcionRol" id="role" name="role" required>
+                                    <option value="Usuario">Usuario</option>
+                                    <option value="Admin">Administrador</option>
+                                </select>
+                            </div>
+
+                            <!-- Botón de envío -->
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-light mt-3">REGISTRAR</button>
+                            </div>
+                            
+                        
+                        </form>
+                        <!-- Enlace a la página de login -->
+                        <div class="text-center mt-3">
+                            <p>¿Ya tienes una cuenta? <a href="/auth/login" class="linkAuth">Inicia sesión aquí</a></p>
+                        </div>
+
+                        <!-- Mostrar mensaje de registro exitoso -->
+                        <% if (mensaje) { %>
+                            <div class="alert alert-success" role="alert">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <%= mensaje %>
+                            </div>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<%- include('./partials/footer') %>
+
