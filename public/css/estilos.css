@@ -1128,6 +1128,9 @@
 }
 /* ------------------- FINALIZA CONTACTO ---------------------------- */
 /* ------------------- INICIA SLIDES PREGUNTAS Y ENTREGAS ---------------------------- */
+.Main-entregas{
+    font-family: var(--FontFamilyRoboto);
+}
 /* AJUSTAR FONDO SLIDES*/
 .ajustarFondoSlides{
     background-color: var(--ColorPrincipal ) !important;
