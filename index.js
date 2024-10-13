@@ -39,6 +39,10 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 // Rutas Estaticas
+// sobreNosotros
+app.get('/sobreNosotros', (req, res) => {
+    res.render('sobreNosotros');
+});
 // preguntas
 app.get('/preguntas', (req, res) => {
     res.render('preguntas');

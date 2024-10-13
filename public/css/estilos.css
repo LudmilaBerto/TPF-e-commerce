@@ -1001,9 +1001,11 @@
     color: var(--ColorTerciario);
     opacity: 1;
     font-size: 14px;
+    padding-left:0px;
 }
 .codigo_descuento:focus::placeholder {
     color: transparent; /* Hace el placeholder transparente al enfocar */
+    
 }
 .codigo_descuento:focus {
     outline: none !important; /* Elimina el borde azul */
@@ -1139,4 +1141,17 @@
 }
 
 /* ------------------- FINALIZA SLIDES PREGUNTAS Y ENTREGAS ---------------------------- */
+/* INICIO SOBRE NOSOTROS */
+.cardNosotros{
+    background-color: var(--ColorPrincipal);
+    color: var(--ColorTerciario) !important;
+}
+.colorNosotros{
+    color: var(--ColorTerciario) !important;
 
+}
+.colorNosotros:hover{
+    color: var(--ColorTerciario) !important;
+
+}
+/* FINAL SOBRE NOSOTROS */
