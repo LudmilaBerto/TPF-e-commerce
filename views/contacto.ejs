@@ -1,41 +1,41 @@
 <%- include('./partials/header') %>
 
-<main class="contacto">
+<main class="Main-contacto">
 <section class="container p-3 mt-2 mb-5">
     <!--cards contacto-->
 
     
     
     <!-- FORMULARIO -->
-    <div class="row row-cols-1 g-4 mt-2 mb-4">
+    <div class="row row-cols-1 g-4 mt-2 mb-4 TarjetaContacto">
       <!-- FORMULARIO CONTACTO -->
       <div class="col tamañoContacto">
         <div class="card text-center border-0 ">
           <div class="card-body fondoCardsContacto " >
             <p class="text-center text-light fs-3 py-2 fondoCardsContacto " > CONTACTO</p>
-            <div class="d-flex justify-content-center flex-column flex-md-row " >
-              <!-- nombre y apellido -->
-              <div class="mb-3 text-start me-auto">
-                <label for="name" class="form-label label-auth">Nombre </label>
-                <input type="name" class="form-control inputContacto" id="email" name="email" required placeholder="Ingresa tu nombre">
-              </div>
-              <!-- Campo de correo electrónico -->
-              <div class="mb-3 text-start ms-auto">
-                <label for="email" class="form-label label-auth">Correo electrónico</label>
-                <input type="email" class="form-control inputContacto" id="email" name="email" required placeholder="Ingresa tu correo ">
-              </div>
-            </div>
-            <div class="text-start">
-              <!-- TEXT AREA -->
-              <label for="floatingTextarea" class="text-light text-start pb-2">Escribenos</label>
-              <textarea class="form-control inputContacto" placeholder="Deja tus comentarios aquí" id="floatingTextarea" ></textarea>
-              <div class="d-grid gap-2">
-                <button type="submit" class="btn btn-light mt-3">ENVIAR</button>
-              </div>
-            </div>
-              
-              
-          </div>
+              <form>
+                <div class="d-flex justify-content-center flex-column flex-md-row " >
+                    <!-- nombre y apellido -->
+                    <div class="mb-3 text-start me-auto">
+                      <label for="name" class="form-label label-auth">Nombre </label>
+                      <input type="name" class="form-control inputContacto" id="email" name="email" required placeholder="Ingresa tu nombre">
+                    </div>
+                    <!-- Campo de correo electrónico -->
+                    <div class="mb-3 text-start ms-auto">
+                      <label for="email" class="form-label label-auth">Correo electrónico</label>
+                      <input type="email" class="form-control inputContacto" id="email" name="email" required placeholder="Ingresa tu correo ">
+                    </div>
+                  </div>
+                  <div class="text-start">
+                    <!-- TEXT AREA -->
+                    <label for="floatingTextarea" class="text-light text-start pb-2">Escribenos</label>
+                    <textarea class="form-control inputContacto" placeholder="Deja tus comentarios aquí" id="floatingTextarea" ></textarea>
+                    <div class="d-grid gap-2">
+                      <button type="submit" class="btn btn-light mt-4">ENVIAR</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
         </div>
       </div>
     </div>

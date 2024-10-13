@@ -1089,19 +1089,25 @@
 
 /* ------------------- FINALIZA AUTH ---------------------------- */
 /* ------------------- INICIA CONTACTO ---------------------------- */
+.Main-contacto{
+    background-color: var(--ColorPrincipal);
+    font-family: var(--FontFamilyRoboto);
+}
 .fondoContacto{
     background-color: var(--ColorPrincipal) !important;
     color: var(--ColorTerciario) !important;
 }
 .textosContacto{
     color: var(--ColorTerciario);
+    font-size: 14px;
+    margin-bottom: 5px;
 }
 .fondoCardsContacto{
     background-color: var(--seller) !important;
     
 }
 .tamañoContacto{
-    width: 50%;
+    width: 500px;
     display: block;
     margin: auto;
 }
