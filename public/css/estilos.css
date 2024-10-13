@@ -39,6 +39,7 @@
     color: var(--ColorSecundario);
     pointer-events: none; /* Desactiva eventos de interacción (como hover o clics) */
     font-weight: 400;
+    width: 30px;
 }
 
  /* estilizo la barra de navegacion del header */
@@ -380,7 +381,7 @@
 }
 .comLogo{
     text-align: center;
-    transform: translate(-80px, -10px);
+    transform: translate(-45px, -10px);
 }
 .descrpcionCompania{
     font-size: 13px;
