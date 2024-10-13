@@ -38,6 +38,22 @@ app.get('/favicon.ico', (req, res) => res.status(204));
 app.get('/', (req, res) => {
     res.render('index');
 });
+// Rutas Estaticas
+// sobreNosotros
+app.get('/sobreNosotros', (req, res) => {
+    res.render('sobreNosotros');
+});
+// preguntas
+app.get('/preguntas', (req, res) => {
+    res.render('preguntas');
+});
+// contacto
+app.get('/contacto', (req, res) => {
+    res.render('contacto');
+});
+app.get('/entregas', (req, res) => {
+    res.render('entregas');
+});
 
 // Rutas dinámicas para productos
 app.use('/tienda', productos);
@@ -47,6 +63,8 @@ app.use('/auth', auth)
 app.use((req, res, next) => {
     res.status(404).send('Página no encontrada');
 });
+
+
 
 // Configuración del servidor
 app.listen(PORT, () => {

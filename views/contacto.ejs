@@ -1,0 +1,90 @@
+<%- include('./partials/header') %>
+
+<main class="Main-contacto">
+<section class="container p-3 mt-2 mb-5">
+    <!--cards contacto-->
+
+    
+    
+    <!-- FORMULARIO -->
+    <div class="row row-cols-1 g-4 mt-2 mb-4 TarjetaContacto">
+      <!-- FORMULARIO CONTACTO -->
+      <div class="col tamañoContacto">
+        <div class="card text-center border-0 ">
+          <div class="card-body fondoCardsContacto " >
+            <p class="text-center text-light fs-3 py-2 fondoCardsContacto " > CONTACTO</p>
+              <form>
+                <div class="d-flex justify-content-center flex-column flex-md-row " >
+                    <!-- nombre y apellido -->
+                    <div class="mb-3 text-start me-auto">
+                      <label for="name" class="form-label label-auth">Nombre </label>
+                      <input type="name" class="form-control inputContacto" id="email" name="email" required placeholder="Ingresa tu nombre">
+                    </div>
+                    <!-- Campo de correo electrónico -->
+                    <div class="mb-3 text-start ms-auto">
+                      <label for="email" class="form-label label-auth">Correo electrónico</label>
+                      <input type="email" class="form-control inputContacto" id="email" name="email" required placeholder="Ingresa tu correo ">
+                    </div>
+                  </div>
+                  <div class="text-start">
+                    <!-- TEXT AREA -->
+                    <label for="floatingTextarea" class="text-light text-start pb-2">Escribenos</label>
+                    <textarea class="form-control inputContacto" placeholder="Deja tus comentarios aquí" id="floatingTextarea" ></textarea>
+                    <div class="d-grid gap-2">
+                      <button type="submit" class="btn btn-light mt-4">ENVIAR</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+        </div>
+      </div>
+    </div>
+    <!-- TELEFONOS Y EMAIL -->
+    <div class="row row-cols-1 row-cols-md-2 g-4 mt-2 mb-4">
+        <!-- TELEFONOS -->
+        <div class="col">
+          
+          <div class="card border-0">
+            <div class="card-body fondoCardsContacto">
+              <h5 class="card-title text-light">TELÉFONOS</h5>
+              <p class="card-text textosContacto">+48 123 456 789</p>
+                <p class="card-text textosContacto">+48 987 654 321</p>
+                <p class="card-text textosContacto">
+                    Lunes a Sábados de 08:30 a 21:30hs.</p>
+                <p class="card-text textosContacto">
+                    Domingos y feriados de 09:00 a 21:00hs.</p>    
+            </div>
+          </div>
+        </div>
+        <!-- EMAIL -->
+        <div class="col border-0">
+          <div class="card border-0">
+            <div class="card-body fondoCardsContacto ">
+                <h5 class="card-title text-light">EMAIL</h5>
+                <p class="card-text textosContacto">Atención al cliente:</p>
+                <p  class="card-text textosContacto text-decoration-none">showroom@houselab.com</p>
+                <p class="card-text textosContacto">Ventas:</p>
+                <p class="card-text textosContacto text-decoration-none">showroomVentas@houselab.com</p>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+    <!-- REDES SOCIALES-->
+    <div class="col " >
+      <div class="card text-center border-0">
+        <div class="card-body fondoCardsContacto">
+          <h5 class="card-title text-light">REDES SOCIALES</h5>
+          <a href="#" class="logos-footer text-decoration-none"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="logos-footer text-decoration-none"><i class="bi bi-twitter-x pl-2"></i></a>
+          <a href="#" class="logos-footer text-decoration-none"><i class=" pl-2 bi bi-instagram "></i></a>
+          <a href="#" class="logos-footer text-decoration-none"><i class="bi bi-linkedin pl-2"></i></a>
+        </div>
+      </div>
+    </div>
+</section>
+</main>
+
+<%- include('./partials/footer') %>
+
+
