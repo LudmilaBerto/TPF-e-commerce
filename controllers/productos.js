@@ -38,7 +38,7 @@ exports.getHabitaciones = async (req, res, next) => {
         if (!productos || productos.length === 0) {
             return res.status(404).json({ mensaje: `No tenemos stock para la habitación ${categoria}` });
         }
-
+		
         res.render('catalogo', { productos });
     } catch (error) {
         res.status(400).json({ mensaje: `Ocurrió un error: ${error.message}` });
