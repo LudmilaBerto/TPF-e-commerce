@@ -51,10 +51,14 @@ app.get('/preguntas', (req, res) => {
 app.get('/contacto', (req, res) => {
     res.render('contacto');
 });
+// Entregas
 app.get('/entregas', (req, res) => {
     res.render('entregas');
 });
-
+// Habitaciones
+app.get('/habitaciones', (req, res) => {
+    res.render('habitaciones');
+});
 // Rutas dinámicas para productos
 app.use('/tienda', productos);
 app.use('/auth', auth)

@@ -26,5 +26,6 @@ router.route('/productos/:id').get(getProducto).put(putProducto).delete(deletePr
 router.route('/carrito').get(getCarrito)
 
 
+
 //exporto al index.js
 module.exports = router
