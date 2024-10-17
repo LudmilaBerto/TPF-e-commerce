@@ -1,6 +1,10 @@
 #  House LAB - E-commerce de Muebles
 
-video de página
+
+
+https://github.com/user-attachments/assets/d56488e8-3f06-41f3-a1f0-fc6498dcc3fa
+
+
 
 ## Objetivo del Proyecto
 
